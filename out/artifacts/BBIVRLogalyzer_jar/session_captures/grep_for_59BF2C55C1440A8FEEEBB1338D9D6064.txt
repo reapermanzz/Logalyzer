@@ -1,0 +1,2 @@
+Search result for pattern "59BF2C55C1440A8FEEEBB1338D9D6064:/bbIVR":
+C:/rorydev/mm_workspace/Logalyzer/out/artifacts/BBIVRLogalyzer_jar/trace2.log:59BF2C55C1440A8FEEEBB1338D9D6064:/bbIVR
