@@ -44,7 +44,7 @@ public class LogalyzerTest {
     public void testGetSSH(){
         try{
             Logalyzer log = new Logalyzer();
-            log.setLogPath(System.getProperty("user.dir"));
+            //log.setLogPath(System.getProperty("user.dir"));
             log.sftpFromServer("/home/reaperman/logs/rh.rdctech.com/http", "reaperman", "rh.rdctech.com","13371337");
         }
         catch(LogException e){

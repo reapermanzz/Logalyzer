@@ -8,10 +8,13 @@ import net.sf.jftp.*;
 import net.sf.jftp.net.FtpClient;
 import net.sf.jftp.net.FtpConnection;
 import net.sf.jftp.net.FtpTransfer;
+import net.sf.jftp.system.logging.Log;
 
 import java.io.*;
 import java.net.URLDecoder;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Vector;
 
 
@@ -22,6 +25,9 @@ public class Logalyzer {
 
     private String logPath;
     private String grepPath;
+    private StringBuilder consoleLog = new StringBuilder("");
+    private String logLevel = "info";
+    private Map<String, String> credentials = null;
 
     public Logalyzer() {
 
@@ -62,6 +68,42 @@ public class Logalyzer {
         this.grepPath = grepPath;
     }
 
+    public String getLogLevel() {
+        return logLevel;
+    }
+
+    public void setLogLevel(String logLevel) {
+        this.logLevel = logLevel;
+    }
+
+    public StringBuilder getConsoleLog() {
+        return consoleLog;
+    }
+
+    public void setConsoleLog(StringBuilder consoleLog) {
+        this.consoleLog = consoleLog;
+    }
+
+    public Map<String, String> getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(Map<String, String> credentials) {
+        this.credentials = credentials;
+    }
+
+    public void displayToConsole(String message) {
+        message = this.getLogLevel() + ":" + message;
+        this.getConsoleLog().append(System.getProperty("line.separator")+message);
+        System.out.println("******************************************************************");
+        System.out.println("BEGINNING CONSOLE LOG");
+        System.out.println("******************************************************************");
+        System.out.println(this.getConsoleLog());
+        System.out.println("******************************************************************");
+        System.out.println("ENDING CONSOLE LOG");
+        System.out.println("******************************************************************");
+    }
+
     public static void main(String args[]) {
     }
 
@@ -74,10 +116,10 @@ public class Logalyzer {
                 Process p = null;
                 File file = new File(this.getLogPath());
                 if (new File(this.getLogPath()).isDirectory()) {
-                    System.out.println("Running Command: " + this.getGrepPath() + " -r \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
+                    this.displayToConsole("Running Command: " + this.getGrepPath() + " -r \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
                     p = Runtime.getRuntime().exec(this.getGrepPath() + " -r --exclude-dir=session_captures \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
                 } else {
-                    System.out.println("Running Command: " + this.getGrepPath() + " \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
+                    this.displayToConsole("Running Command: " + this.getGrepPath() + " \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
                     p = Runtime.getRuntime().exec(this.getGrepPath() + " \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
                 }
                 p.waitFor();
@@ -94,7 +136,7 @@ public class Logalyzer {
                     bre.close();
                 }
                 if (!isFilenameValid(sessionId) && sessionId.contains(":/bbIVR")) {
-                    System.out.println("Writing the file to save capture: " + sessionId.substring(0, 32) + ".txt");
+                    this.displayToConsole("Writing the file to save capture: " + sessionId.substring(0, 32) + ".txt");
                     writeToFile(output.toString(), "grep_for_" + sessionId.substring(0, 32));
                 }
                 return output;
@@ -173,63 +215,6 @@ public class Logalyzer {
         return line.substring(sessionSuffixLoc - 32, sessionSuffixLoc + 7);
     }
 
-    /*public Boolean sshLogFilesFromServer(String pathToSFTP, String pathToGet, String usr, String host, String pwd) throws LogException {
-        if (pathToSFTP != null && isFilenameValid(pathToSFTP)) {
-            try {
-                System.out.println("Running command...: " + pathToSFTP + " " + usr + "@" + host + ":" + pathToGet);
-                Process p = Runtime.getRuntime().exec(pathToSFTP + " " + usr + "@" + host + ":" + pathToGet);
-                boolean finishedInteracting = true;
-                BufferedReader bri = null;
-                BufferedWriter brw = null;
-                StringBuilder inputStream = new StringBuilder();
-                while (finishedInteracting) {
-
-                    System.out.println("Starting interactive streams...");
-
-                    OutputStream out = p.getOutputStream();
-                    out.write("13371337");
-                    //read the output of the command currently
-                    bri = new BufferedReader(new InputStreamReader(p.getInputStream()));
-                    String line;
-
-
-                    while (bri.ready() && (line = bri.readLine()) != null) {
-                        System.out.println("Printing input stream line...");
-                        inputStream.append(System.lineSeparator() + line);
-                        System.out.println(line);
-                    }
-                    if (inputStream.length() == 0) {
-                        System.out.println("InputStream is null");
-                        BufferedReader bre = new BufferedReader(new InputStreamReader(p.getErrorStream()));
-                        while ((line = bre.readLine()) != null) {
-                            inputStream.append(System.lineSeparator() + line);
-                        }
-                        throw new LogException("Error while running SFTP command: " + inputStream.toString());
-                    }
-                    System.out.println("typing the password...");
-
-                    //check if the process has finished running
-                    try {
-                        p.exitValue();
-                        System.out.println("Process has finished running");
-                        finishedInteracting = false;
-                    } catch (IllegalThreadStateException itse) {
-                        //keep on running
-                    }
-                    break;
-                }
-                //close the streams
-                bri.close();
-                brw.close();
-
-            } catch (IOException e) {
-                throw new LogException("IO Exception trying to run SFTP Command: " + e.getMessage());
-            }
-            return true;
-        }
-        throw new LogException("You didn't give me a valid path");
-    }*/
-
     public Boolean sftpFromServer(String pathToGet, String usr, String host, String pwd) throws LogException {
         Session session = null;
         Channel channel = null;
@@ -249,31 +234,71 @@ public class Logalyzer {
             channelSftp.cd(pathToGet);
             Vector<ChannelSftp.LsEntry> logs = channelSftp.ls(pathToGet + "/*.log");
             Vector<ChannelSftp.LsEntry> logGZIPs = channelSftp.ls(pathToGet + "/*.gz");
-            System.out.println("GZIPS: " + logGZIPs);
-            Vector<ChannelSftp.LsEntry> allFiles = new Vector <ChannelSftp.LsEntry>();
+            this.displayToConsole("LOG files found: " + logs);
+            this.displayToConsole("GZIP Files found: " + logGZIPs);
+            Vector<ChannelSftp.LsEntry> allFiles = new Vector<ChannelSftp.LsEntry>();
             allFiles.addAll(logs);
             allFiles.addAll(logGZIPs);
             byte[] buffer = new byte[1024];
-            for(ChannelSftp.LsEntry c: allFiles){
-                System.out.println("About to download file: " + c.getFilename());
+            for (ChannelSftp.LsEntry c : allFiles) {
+                this.displayToConsole("About to download file: " + c.getFilename());
+                File newFile = null;
+                if (this.logPath == null) {
+                    this.displayToConsole("Trying to create file: " + System.getProperty("user.dir") + System.getProperty("file.separator") + c.getFilename());
+                    newFile = new File(System.getProperty("user.dir") + System.getProperty("file.separator") + c.getFilename());
+                } else {
+                    newFile = new File(this.logPath + "/" + c.getFilename());
+
+                }
                 BufferedInputStream bis = new BufferedInputStream(channelSftp.get(c.getFilename()));
-                File newFile = new File(this.logPath + "/" + c.getFilename());
                 OutputStream os = new FileOutputStream(newFile);
                 BufferedOutputStream bos = new BufferedOutputStream(os);
                 int readCount;
                 while ((readCount = bis.read(buffer)) > 0) {
-                    System.out.println("Writing: ");
+                    this.displayToConsole("Writing: ");
                     bos.write(buffer, 0, readCount);
                 }
                 bis.close();
                 bos.close();
             }
-
+            this.displayToConsole("Finished retrieving all Files from SFTP");
             return true;
         } catch (Exception ex) {
-            System.out.println("An error occurred: " + ex.getMessage());
             ex.printStackTrace();
-            return false;
+            throw new LogException("An error occurred: " + ex.getMessage());
         }
+    }
+
+    public Map<String, String> parseSSHCredentials(String creds) throws LogException{
+        HashMap <String, String> credentials = new HashMap<String, String>() {
+        };
+        try{
+            credentials.put("username", creds.substring(0, creds.indexOf(":")));
+            credentials.put("password", creds.substring(creds.indexOf(":")+1, creds.indexOf("@")));
+            credentials.put("host", creds.substring(creds.indexOf("@")+1, creds.lastIndexOf(":")));
+            credentials.put("file", creds.substring(creds.lastIndexOf(":")+1, creds.length()));
+            return credentials;
+        }
+        catch (NullPointerException | StringIndexOutOfBoundsException e){
+            throw new LogException("Error parsing SSH credentials, format is \"username:password@host:pathToFiles\" : " + e.getMessage());
+        }
+
+    }
+
+    public Boolean unZipLogs(String pathToTar) throws LogException{
+        try{
+            if(isFilenameValid(pathToTar) && new File(pathToTar).isDirectory()){
+                Process p = Runtime.getRuntime().exec(pathToTar + System.getProperty("file.separator")+"tar.exe ");
+            }
+            else{
+                throw new LogException("Path error, please provide valid directory path for Tar.exe");
+            }
+
+            return true;
+        }
+        catch(IOException e){
+            throw new LogException("Error occurred: " + e.getMessage());
+        }
+
     }
 }

@@ -11,6 +11,7 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/../RoryUnitTest/.idea/libraries/commons-codec-1.7.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../RoryUnitTest/.idea/libraries/hamcrest-core-1.3.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/../RoryUnitTest/.idea/libraries/commons-logging-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/.idea/libraries/jsch-0.1.53.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
