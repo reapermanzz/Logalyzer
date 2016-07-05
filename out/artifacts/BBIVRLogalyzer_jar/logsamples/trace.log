@@ -1,0 +1,882 @@
+29/06/2016 14:08:09:068  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : SCESession bound to HttpSession EECD36EB0A199BCBC3464D5EF5864633
+29/06/2016 14:08:09:209  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Browser Version 2.1.4, terminationURL enabled : true
+29/06/2016 14:08:09:212 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : PlatformParams:getPlatformParams: __VPVarGlobalDate is 1448998449624
+29/06/2016 14:08:09:213 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : PlatformParams:getPlatformParams:Timestamp is 12/01/15 14:34:09
+29/06/2016 14:08:09:213 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : PlatformParams: get global parameters from VPMS...
+29/06/2016 14:08:10:329 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : PlatformParams: AppRuntimeVarsResponse.getGlobalAppRuntimeVars returns status - success
+29/06/2016 14:08:10:330 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : PlatformParams: get parameter|value - __VPLicenseServerURL|https://qepm001ykf:8443/WebLM/LicenseServer
+29/06/2016 14:08:10:330  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : Start
+29/06/2016 14:08:10:348  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : ** Pushed Stack Frame [/bbIVR]
+29/06/2016 14:08:10:355  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___sessionid to complex: session:sessionid  as [qmpp001ykf-2016181180056-16]
+29/06/2016 14:08:10:361  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : runtime_platform : Experience Portal
+29/06/2016 14:08:10:361  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : runtime_asr : Desktop Microsoft Speech SAPI
+29/06/2016 14:08:10:363 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Acquiring initial License
+29/06/2016 14:08:10:364  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Acquiring Avaya Platform runtime license
+29/06/2016 14:08:10:365  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using license check timeout :0
+29/06/2016 14:08:10:423  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Runtime :true
+29/06/2016 14:08:10:423  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : IC :true
+29/06/2016 14:08:10:423  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTI :true
+29/06/2016 14:08:10:483 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Grace Period timer cleared
+29/06/2016 14:08:10:484 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : License refresh timer started
+29/06/2016 14:08:10:487  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : MessageType is speech
+29/06/2016 14:08:10:537  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : initFlow
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as []
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :redirectinfo___reason to complex: redirectinfo:reason  as []
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as []
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___aai to complex: session:aai  as []
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___ani to complex: session:ani  as [31001]
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___calltag to complex: session:calltag  as [qmpp001ykf-31607-2016181180056]
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___channel to complex: session:channel  as [31607]
+29/06/2016 14:08:10:538  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___dnis to complex: session:dnis  as [39000]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___protocolname to complex: session:protocolname  as [H323]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___protocolversion to complex: session:protocolversion  as [1.0]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___sessionlabel to complex: session:sessionlabel  as [00001000031467223800]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___sharedmode to complex: session:sharedmode  as [serviceprovider]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___ucid to complex: session:ucid  as [00001000031467223800]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___uui to complex: session:uui  as []
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+29/06/2016 14:08:10:539  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videofps to complex: session:videofps  as [unknown]
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [31607]
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as []
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as []
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :session___vprdnis to complex: session:vprdnis  as []
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+29/06/2016 14:08:10:540  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+29/06/2016 14:08:10:546 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZSuzSc1P63YsUJZ1iCyv9qw=
+29/06/2016 14:08:10:547 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/CallInfoInitialCall?extension%3D31607&k=VEkmBndtHF%2BcpZLR78UXZSuzSc1P63YsUJZ1iCyv9qw%3D
+29/06/2016 14:08:10:547 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.execute:  setting session cookie to EECD36EB0A199BCBC3464D5EF5864633:/bbIVR
+29/06/2016 14:08:10:562 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.execute: callinfo from Manager is callid=3&ani=31001&dnis=39000&extension=31607&ucID=00001000031467223800&uui= &state=established
+29/06/2016 14:08:10:563 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.processCallInfoResults: rawResponse: callid=3&ani=31001&dnis=39000&extension=31607&ucID=00001000031467223800&uui=+&state=established
+29/06/2016 14:08:10:563 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CallInfo.doGetCallInfo: Populating call info variable values...
+29/06/2016 14:08:10:563 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.setCallInfoVariableValues: Call ID 3
+29/06/2016 14:08:10:563 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.setCallInfoVariableValues: Calling # (ANI) 31001
+29/06/2016 14:08:10:563 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.setCallInfoVariableValues: Called # (DNIS) 39000
+29/06/2016 14:08:10:563 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.setCallInfoVariableValues: Ext 31607
+29/06/2016 14:08:10:563 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.setCallInfoVariableValues: UCID 00001000031467223800
+29/06/2016 14:08:10:564 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.setCallInfoVariableValues: UUI  
+29/06/2016 14:08:10:564 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.setCallInfoVariableValues: State established
+29/06/2016 14:08:10:568  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : init-Begin
+29/06/2016 14:08:10:569  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : init-setCallStart
+29/06/2016 14:08:10:570  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-setCallStart | Call Start time is: 1467223690
+29/06/2016 14:08:10:571  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : init-getConfigPath
+29/06/2016 14:08:10:571  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-getConfigPath | ivrUtil config path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/config.json
+29/06/2016 14:08:10:571  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-getConfigPath | ivrUtil cache path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/cache
+29/06/2016 14:08:10:571  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : init-checkDNIS
+29/06/2016 14:08:10:597  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-checkDNIS | Retrieving DNIS configuration for 39000
+29/06/2016 14:08:11:009  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-checkDNIS | DNIS configuration was successfully retrieved.
+29/06/2016 14:08:11:009  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-checkDNIS | Setting First Flow to supportLobby
+29/06/2016 14:08:11:009  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-checkDNIS | Setting language to english
+29/06/2016 14:08:11:009  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-checkDNIS | Setting the default transfer location to: 39150
+29/06/2016 14:08:11:009  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-checkDNIS | Setting debug mode to: false
+29/06/2016 14:08:11:010  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-checkDNIS | Setting suppress transfer to: false
+29/06/2016 14:08:11:010  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : init-checkForErrors
+29/06/2016 14:08:11:013  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : [condition1] Expression [callFlowInit:hasError] String Equal Ignorecase [true]
+29/06/2016 14:08:11:014  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : init-setLanguage
+29/06/2016 14:08:11:015  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Setting current language [english] from variable [callFlowInit:language].
+29/06/2016 14:08:11:018  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:init-setLanguage | Language has been set to:  | session:currentlanguage : english
+29/06/2016 14:08:11:019  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : init-Return
+29/06/2016 14:08:11:019 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Subflow return node "init-Return" forwarding to "selectFirstFlow"
+29/06/2016 14:08:11:019  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : selectFirstFlow
+29/06/2016 14:08:11:020  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : selectFlow-Begin
+29/06/2016 14:08:11:021  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : selectFlow-selectFirstFlow
+29/06/2016 14:08:11:021  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : [condition1] Expression [callFlowInit:firstFlow] String Equal Ignorecase [supportLobby]
+29/06/2016 14:08:11:021  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : selectFlow-supportLobby
+29/06/2016 14:08:11:022  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : supportLobby-Begin
+29/06/2016 14:08:11:023  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : supportLobby-setAttemptCountToZero
+29/06/2016 14:08:11:024  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Assigning [0] to [callFlowSupportLobby:attemptCount]
+29/06/2016 14:08:11:024  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : supportLobby-playWelcome
+29/06/2016 14:08:11:062  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : supportLobby-setTransferRule
+29/06/2016 14:08:11:062  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Assigning [support] to [callFlowInitiateTransfer:transferRule]
+29/06/2016 14:08:11:063  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : supportLobby-reportMenu
+29/06/2016 14:08:11:064  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:08:11:064  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu1]
+29/06/2016 14:08:11:065  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:08:11:066  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : supportLobby-supportLobbyMenu
+29/06/2016 14:08:15:153  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : setCallerDisconnect
+29/06/2016 14:08:15:153  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Assigning [true] to [callFlowReport:callerDisconnected]
+29/06/2016 14:08:15:154  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : reportingFlow
+29/06/2016 14:08:15:154  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : reportingFlow-Begin
+29/06/2016 14:08:15:155  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : reportingFlow-setCallDisposition
+29/06/2016 14:08:15:158  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : [condition1] Expression [callFlowReport:callerDisconnected] String Equal Ignorecase [true]
+29/06/2016 14:08:15:158  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Assigning [disconnectCaller] to [callFlowReport:callDisposition]
+29/06/2016 14:08:15:158  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : reportingFlow-reportCall
+29/06/2016 14:08:15:159  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : session id:qmpp001ykf-2016181180056-16 | bbIVR:reportingFlow-reportCall | Call End time is: 1467223695
+29/06/2016 14:08:15:250  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : reportingFlow-Return
+29/06/2016 14:08:15:250 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Subflow return node "reportingFlow-Return" forwarding to "AppEnd"
+29/06/2016 14:08:15:251  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Using SCESession EECD36EB0A199BCBC3464D5EF5864633:/bbIVR servlet : AppEnd
+29/06/2016 14:08:15:253 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTIEnd.execute:31607 callid  is 3
+29/06/2016 14:08:15:253 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZTNhbhfeZXEISrsNMuOr6I8=
+29/06/2016 14:08:15:254 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/End?extension%3D31607%26callid%3D3&k=VEkmBndtHF%2BcpZLR78UXZTNhbhfeZXEISrsNMuOr6I8%3D
+29/06/2016 14:08:15:254 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.execute:  setting session cookie to EECD36EB0A199BCBC3464D5EF5864633:/bbIVR
+29/06/2016 14:08:15:276 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : CTICommand.execute: callinfo from Manager is 
+29/06/2016 14:08:15:282  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Removing session from AvayaSessionTermination Servlet
+29/06/2016 14:08:15:282  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Termination URL reply : <?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-us">
+</vxml>
+
+29/06/2016 14:08:15:282  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : HTTP Session lost removing SCESession EECD36EB0A199BCBC3464D5EF5864633
+29/06/2016 14:08:15:283  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : SCESession Removed
+29/06/2016 14:08:15:283 DEBUG - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : Removing 1 session stack frames.
+29/06/2016 14:08:15:283  INFO - EECD36EB0A199BCBC3464D5EF5864633:/bbIVR : ** Popped Stack Frame [/bbIVR]
+29/06/2016 14:08:18:888  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : SCESession bound to HttpSession DF01CB85A2606FD36586710F9F39A7E4
+29/06/2016 14:08:18:889  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Browser Version 2.1.4, terminationURL enabled : true
+29/06/2016 14:08:18:889 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : PlatformParams:getPlatformParams: __VPVarGlobalDate is 1448998449624
+29/06/2016 14:08:18:891 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : PlatformParams:getPlatformParams:Timestamp is 12/01/15 14:34:09
+29/06/2016 14:08:18:892  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : Start
+29/06/2016 14:08:18:894  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : ** Pushed Stack Frame [/bbIVR]
+29/06/2016 14:08:18:896  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___sessionid to complex: session:sessionid  as [qmpp001ykf-2016181180106-17]
+29/06/2016 14:08:18:899  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : runtime_platform : Experience Portal
+29/06/2016 14:08:18:899  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : runtime_asr : Desktop Microsoft Speech SAPI
+29/06/2016 14:08:18:901  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : MessageType is speech
+29/06/2016 14:08:18:938  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : initFlow
+29/06/2016 14:08:18:939  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as []
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :redirectinfo___reason to complex: redirectinfo:reason  as []
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as []
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___aai to complex: session:aai  as []
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___ani to complex: session:ani  as [31001]
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___calltag to complex: session:calltag  as [qmpp001ykf-31604-2016181180106]
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___channel to complex: session:channel  as [31604]
+29/06/2016 14:08:18:940  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___dnis to complex: session:dnis  as [39000]
+29/06/2016 14:08:18:941  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+29/06/2016 14:08:18:941  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___protocolname to complex: session:protocolname  as [H323]
+29/06/2016 14:08:18:941  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___protocolversion to complex: session:protocolversion  as [1.0]
+29/06/2016 14:08:18:941  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___sessionlabel to complex: session:sessionlabel  as [00001000041467223811]
+29/06/2016 14:08:18:941  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___sharedmode to complex: session:sharedmode  as [serviceprovider]
+29/06/2016 14:08:18:941  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___ucid to complex: session:ucid  as [00001000041467223811]
+29/06/2016 14:08:18:941  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___uui to complex: session:uui  as []
+29/06/2016 14:08:18:941  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+29/06/2016 14:08:18:942  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+29/06/2016 14:08:18:942  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+29/06/2016 14:08:18:942  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+29/06/2016 14:08:18:942  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+29/06/2016 14:08:18:942  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videofps to complex: session:videofps  as [unknown]
+29/06/2016 14:08:18:942  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+29/06/2016 14:08:18:942  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+29/06/2016 14:08:18:942  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+29/06/2016 14:08:18:943  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [31604]
+29/06/2016 14:08:18:943  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as []
+29/06/2016 14:08:18:943  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as []
+29/06/2016 14:08:18:943  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :session___vprdnis to complex: session:vprdnis  as []
+29/06/2016 14:08:18:943  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+29/06/2016 14:08:18:943  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+29/06/2016 14:08:18:943 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZbppYRBgHxHpSrsNMuOr6I8=
+29/06/2016 14:08:18:944 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/CallInfoInitialCall?extension%3D31604&k=VEkmBndtHF%2BcpZLR78UXZbppYRBgHxHpSrsNMuOr6I8%3D
+29/06/2016 14:08:18:944 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.execute:  setting session cookie to DF01CB85A2606FD36586710F9F39A7E4:/bbIVR
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.execute: callinfo from Manager is callid=4&ani=31001&dnis=39000&extension=31604&ucID=00001000041467223811&uui= &state=established
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.processCallInfoResults: rawResponse: callid=4&ani=31001&dnis=39000&extension=31604&ucID=00001000041467223811&uui=+&state=established
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CallInfo.doGetCallInfo: Populating call info variable values...
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.setCallInfoVariableValues: Call ID 4
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.setCallInfoVariableValues: Calling # (ANI) 31001
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.setCallInfoVariableValues: Called # (DNIS) 39000
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.setCallInfoVariableValues: Ext 31604
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.setCallInfoVariableValues: UCID 00001000041467223811
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.setCallInfoVariableValues: UUI  
+29/06/2016 14:08:18:951 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.setCallInfoVariableValues: State established
+29/06/2016 14:08:18:952  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : init-Begin
+29/06/2016 14:08:18:952  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : init-setCallStart
+29/06/2016 14:08:18:952  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-setCallStart | Call Start time is: 1467223698
+29/06/2016 14:08:18:952  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : init-getConfigPath
+29/06/2016 14:08:18:952  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-getConfigPath | ivrUtil config path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/config.json
+29/06/2016 14:08:18:952  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-getConfigPath | ivrUtil cache path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/cache
+29/06/2016 14:08:18:952  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : init-checkDNIS
+29/06/2016 14:08:18:954  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-checkDNIS | Retrieving DNIS configuration for 39000
+29/06/2016 14:08:18:979  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-checkDNIS | DNIS configuration was successfully retrieved.
+29/06/2016 14:08:18:980  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-checkDNIS | Setting First Flow to supportLobby
+29/06/2016 14:08:18:980  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-checkDNIS | Setting language to english
+29/06/2016 14:08:18:980  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-checkDNIS | Setting the default transfer location to: 39150
+29/06/2016 14:08:18:980  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-checkDNIS | Setting debug mode to: false
+29/06/2016 14:08:18:980  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-checkDNIS | Setting suppress transfer to: false
+29/06/2016 14:08:18:980  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : init-checkForErrors
+29/06/2016 14:08:18:980  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : [condition1] Expression [callFlowInit:hasError] String Equal Ignorecase [true]
+29/06/2016 14:08:18:980  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : init-setLanguage
+29/06/2016 14:08:18:981  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Setting current language [english] from variable [callFlowInit:language].
+29/06/2016 14:08:18:987  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:init-setLanguage | Language has been set to:  | session:currentlanguage : english
+29/06/2016 14:08:18:987  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : init-Return
+29/06/2016 14:08:18:987 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Subflow return node "init-Return" forwarding to "selectFirstFlow"
+29/06/2016 14:08:18:987  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : selectFirstFlow
+29/06/2016 14:08:18:987  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : selectFlow-Begin
+29/06/2016 14:08:18:988  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : selectFlow-selectFirstFlow
+29/06/2016 14:08:18:988  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : [condition1] Expression [callFlowInit:firstFlow] String Equal Ignorecase [supportLobby]
+29/06/2016 14:08:18:989  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : selectFlow-supportLobby
+29/06/2016 14:08:18:989  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : supportLobby-Begin
+29/06/2016 14:08:18:989  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : supportLobby-setAttemptCountToZero
+29/06/2016 14:08:18:990  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Assigning [0] to [callFlowSupportLobby:attemptCount]
+29/06/2016 14:08:18:990  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : supportLobby-playWelcome
+29/06/2016 14:08:19:013  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : supportLobby-setTransferRule
+29/06/2016 14:08:19:014  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Assigning [support] to [callFlowInitiateTransfer:transferRule]
+29/06/2016 14:08:19:014  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : supportLobby-reportMenu
+29/06/2016 14:08:19:014  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:08:19:014  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu1]
+29/06/2016 14:08:19:014  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:08:19:014  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : supportLobby-supportLobbyMenu
+29/06/2016 14:08:21:500  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : supportLobby-goodIVRTransfer
+29/06/2016 14:08:21:500  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :supportLobbyMenu___confidence to complex: supportLobbyMenu:confidence  as [1]
+29/06/2016 14:08:21:500  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :supportLobbyMenu___inputmode to complex: supportLobbyMenu:inputmode  as [dtmf]
+29/06/2016 14:08:21:500  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :supportLobbyMenu___interpretation to complex: supportLobbyMenu:interpretation  as [2]
+29/06/2016 14:08:21:500  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :supportLobbyMenu___noinputcount to complex: supportLobbyMenu:noinputcount  as [0]
+29/06/2016 14:08:21:500  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :supportLobbyMenu___nomatchcount to complex: supportLobbyMenu:nomatchcount  as [0]
+29/06/2016 14:08:21:501  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :supportLobbyMenu___utterance to complex: supportLobbyMenu:utterance  as [2]
+29/06/2016 14:08:21:501  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Storing :supportLobbyMenu___value to complex: supportLobbyMenu:value  as [2]
+29/06/2016 14:08:21:501  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : goodIVRTransfer-Begin
+29/06/2016 14:08:21:502  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : goodIVRTransfer-checkLanguage
+29/06/2016 14:08:21:502  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : [condition1] Expression [callFlowInit:language] String Equal Ignorecase [english]
+29/06/2016 14:08:21:503  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : goodIVRTransfer-setAttemptCountToZero
+29/06/2016 14:08:21:503  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Assigning [0] to [callFlowGoodIVRTransfer:attemptCount]
+29/06/2016 14:08:21:503  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : goodIVRTransfer-reportMenu
+29/06/2016 14:08:21:503  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:08:21:503  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : [condition2] Expression [callFlowReport:currentMenu] String Equal [2]
+29/06/2016 14:08:21:504  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu2]
+29/06/2016 14:08:21:504  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:08:21:504  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : goodIVRTransfer-goodIVRMenu
+29/06/2016 14:08:23:608  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : setCallerDisconnect
+29/06/2016 14:08:23:609  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Assigning [true] to [callFlowReport:callerDisconnected]
+29/06/2016 14:08:23:609  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : reportingFlow
+29/06/2016 14:08:23:609  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : reportingFlow-Begin
+29/06/2016 14:08:23:609  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : reportingFlow-setCallDisposition
+29/06/2016 14:08:23:609  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : [condition1] Expression [callFlowReport:callerDisconnected] String Equal Ignorecase [true]
+29/06/2016 14:08:23:609  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Assigning [disconnectCaller] to [callFlowReport:callDisposition]
+29/06/2016 14:08:23:610  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : reportingFlow-reportCall
+29/06/2016 14:08:23:610  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : session id:qmpp001ykf-2016181180106-17 | bbIVR:reportingFlow-reportCall | Call End time is: 1467223703
+29/06/2016 14:08:23:624  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : reportingFlow-Return
+29/06/2016 14:08:23:624 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Subflow return node "reportingFlow-Return" forwarding to "AppEnd"
+29/06/2016 14:08:23:624  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Using SCESession DF01CB85A2606FD36586710F9F39A7E4:/bbIVR servlet : AppEnd
+29/06/2016 14:08:23:625 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTIEnd.execute:31604 callid  is 4
+29/06/2016 14:08:23:626 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZYuMp3Fcbj8KUJZ1iCyv9qw=
+29/06/2016 14:08:23:626 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/End?extension%3D31604%26callid%3D4&k=VEkmBndtHF%2BcpZLR78UXZYuMp3Fcbj8KUJZ1iCyv9qw%3D
+29/06/2016 14:08:23:626 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.execute:  setting session cookie to DF01CB85A2606FD36586710F9F39A7E4:/bbIVR
+29/06/2016 14:08:23:636 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : CTICommand.execute: callinfo from Manager is 
+29/06/2016 14:08:23:642  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Removing session from AvayaSessionTermination Servlet
+29/06/2016 14:08:23:642  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Termination URL reply : <?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-us">
+</vxml>
+
+29/06/2016 14:08:23:642  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : HTTP Session lost removing SCESession DF01CB85A2606FD36586710F9F39A7E4
+29/06/2016 14:08:23:642  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : SCESession Removed
+29/06/2016 14:08:23:642 DEBUG - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : Removing 1 session stack frames.
+29/06/2016 14:08:23:642  INFO - DF01CB85A2606FD36586710F9F39A7E4:/bbIVR : ** Popped Stack Frame [/bbIVR]
+29/06/2016 14:20:16:653  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : SCESession bound to HttpSession E9598132DECABAA01C3CE60CAF9B81D8
+29/06/2016 14:20:16:654  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Browser Version 2.1.4, terminationURL enabled : true
+29/06/2016 14:20:16:654 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : PlatformParams:getPlatformParams: __VPVarGlobalDate is 1448998449624
+29/06/2016 14:20:16:655 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : PlatformParams:getPlatformParams:Timestamp is 12/01/15 14:34:09
+29/06/2016 14:20:16:656  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : Start
+29/06/2016 14:20:16:659  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : ** Pushed Stack Frame [/bbIVR]
+29/06/2016 14:20:16:660  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___sessionid to complex: session:sessionid  as [qmpp001ykf-2016181181304-18]
+29/06/2016 14:20:16:663  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : runtime_platform : Experience Portal
+29/06/2016 14:20:16:663  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : runtime_asr : Desktop Microsoft Speech SAPI
+29/06/2016 14:20:16:665  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : MessageType is speech
+29/06/2016 14:20:16:698  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : initFlow
+29/06/2016 14:20:16:698  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as []
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :redirectinfo___reason to complex: redirectinfo:reason  as []
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as []
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___aai to complex: session:aai  as []
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___ani to complex: session:ani  as [31001]
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___calltag to complex: session:calltag  as [qmpp001ykf-31609-2016181181304]
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___channel to complex: session:channel  as [31609]
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___dnis to complex: session:dnis  as [39000]
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___protocolname to complex: session:protocolname  as [H323]
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___protocolversion to complex: session:protocolversion  as [1.0]
+29/06/2016 14:20:16:699  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___sessionlabel to complex: session:sessionlabel  as [00001000051467224528]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___sharedmode to complex: session:sharedmode  as [serviceprovider]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___ucid to complex: session:ucid  as [00001000051467224528]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___uui to complex: session:uui  as []
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videofps to complex: session:videofps  as [unknown]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+29/06/2016 14:20:16:700  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+29/06/2016 14:20:16:701  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [31609]
+29/06/2016 14:20:16:701  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as []
+29/06/2016 14:20:16:701  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as []
+29/06/2016 14:20:16:701  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :session___vprdnis to complex: session:vprdnis  as []
+29/06/2016 14:20:16:701  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+29/06/2016 14:20:16:701  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+29/06/2016 14:20:16:701 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZUcBOR82C3ESkB9DVRxPSv4=
+29/06/2016 14:20:16:701 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/CallInfoInitialCall?extension%3D31609&k=VEkmBndtHF%2BcpZLR78UXZUcBOR82C3ESkB9DVRxPSv4%3D
+29/06/2016 14:20:16:702 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.execute:  setting session cookie to E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.execute: callinfo from Manager is callid=5&ani=31001&dnis=39000&extension=31609&ucID=00001000051467224528&uui= &state=established
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.processCallInfoResults: rawResponse: callid=5&ani=31001&dnis=39000&extension=31609&ucID=00001000051467224528&uui=+&state=established
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CallInfo.doGetCallInfo: Populating call info variable values...
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.setCallInfoVariableValues: Call ID 5
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.setCallInfoVariableValues: Calling # (ANI) 31001
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.setCallInfoVariableValues: Called # (DNIS) 39000
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.setCallInfoVariableValues: Ext 31609
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.setCallInfoVariableValues: UCID 00001000051467224528
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.setCallInfoVariableValues: UUI  
+29/06/2016 14:20:16:711 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.setCallInfoVariableValues: State established
+29/06/2016 14:20:16:712  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : init-Begin
+29/06/2016 14:20:16:712  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : init-setCallStart
+29/06/2016 14:20:16:712  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-setCallStart | Call Start time is: 1467224416
+29/06/2016 14:20:16:712  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : init-getConfigPath
+29/06/2016 14:20:16:712  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-getConfigPath | ivrUtil config path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/config.json
+29/06/2016 14:20:16:712  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-getConfigPath | ivrUtil cache path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/cache
+29/06/2016 14:20:16:713  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : init-checkDNIS
+29/06/2016 14:20:16:714  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-checkDNIS | Retrieving DNIS configuration for 39000
+29/06/2016 14:20:16:734  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-checkDNIS | DNIS configuration was successfully retrieved.
+29/06/2016 14:20:16:734  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-checkDNIS | Setting First Flow to supportLobby
+29/06/2016 14:20:16:735  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-checkDNIS | Setting language to english
+29/06/2016 14:20:16:735  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-checkDNIS | Setting the default transfer location to: 39150
+29/06/2016 14:20:16:735  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-checkDNIS | Setting debug mode to: false
+29/06/2016 14:20:16:735  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-checkDNIS | Setting suppress transfer to: false
+29/06/2016 14:20:16:735  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : init-checkForErrors
+29/06/2016 14:20:16:735  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : [condition1] Expression [callFlowInit:hasError] String Equal Ignorecase [true]
+29/06/2016 14:20:16:735  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : init-setLanguage
+29/06/2016 14:20:16:735  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Setting current language [english] from variable [callFlowInit:language].
+29/06/2016 14:20:16:738  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:init-setLanguage | Language has been set to:  | session:currentlanguage : english
+29/06/2016 14:20:16:739  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : init-Return
+29/06/2016 14:20:16:739 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Subflow return node "init-Return" forwarding to "selectFirstFlow"
+29/06/2016 14:20:16:743  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : selectFirstFlow
+29/06/2016 14:20:16:743  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : selectFlow-Begin
+29/06/2016 14:20:16:743  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : selectFlow-selectFirstFlow
+29/06/2016 14:20:16:743  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : [condition1] Expression [callFlowInit:firstFlow] String Equal Ignorecase [supportLobby]
+29/06/2016 14:20:16:744  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : selectFlow-supportLobby
+29/06/2016 14:20:16:744  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : supportLobby-Begin
+29/06/2016 14:20:16:744  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : supportLobby-setAttemptCountToZero
+29/06/2016 14:20:16:744  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Assigning [0] to [callFlowSupportLobby:attemptCount]
+29/06/2016 14:20:16:744  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : supportLobby-playWelcome
+29/06/2016 14:20:16:762  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : supportLobby-setTransferRule
+29/06/2016 14:20:16:762  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Assigning [support] to [callFlowInitiateTransfer:transferRule]
+29/06/2016 14:20:16:762  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : supportLobby-reportMenu
+29/06/2016 14:20:16:762  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:20:16:762  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu1]
+29/06/2016 14:20:16:762  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:20:16:763  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : supportLobby-supportLobbyMenu
+29/06/2016 14:20:19:600  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : setCallerDisconnect
+29/06/2016 14:20:19:600  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Assigning [true] to [callFlowReport:callerDisconnected]
+29/06/2016 14:20:19:601  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : reportingFlow
+29/06/2016 14:20:19:601  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : reportingFlow-Begin
+29/06/2016 14:20:19:601  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : reportingFlow-setCallDisposition
+29/06/2016 14:20:19:601  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : [condition1] Expression [callFlowReport:callerDisconnected] String Equal Ignorecase [true]
+29/06/2016 14:20:19:601  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Assigning [disconnectCaller] to [callFlowReport:callDisposition]
+29/06/2016 14:20:19:601  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : reportingFlow-reportCall
+29/06/2016 14:20:19:602  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : session id:qmpp001ykf-2016181181304-18 | bbIVR:reportingFlow-reportCall | Call End time is: 1467224419
+29/06/2016 14:20:19:609  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : reportingFlow-Return
+29/06/2016 14:20:19:609 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Subflow return node "reportingFlow-Return" forwarding to "AppEnd"
+29/06/2016 14:20:19:609  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Using SCESession E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR servlet : AppEnd
+29/06/2016 14:20:19:610 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTIEnd.execute:31609 callid  is 5
+29/06/2016 14:20:19:610 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZdrWpFiaBDvh2VaRLGy1TDk=
+29/06/2016 14:20:19:611 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/End?extension%3D31609%26callid%3D5&k=VEkmBndtHF%2BcpZLR78UXZdrWpFiaBDvh2VaRLGy1TDk%3D
+29/06/2016 14:20:19:611 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.execute:  setting session cookie to E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR
+29/06/2016 14:20:19:632 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : CTICommand.execute: callinfo from Manager is 
+29/06/2016 14:20:19:638  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Removing session from AvayaSessionTermination Servlet
+29/06/2016 14:20:19:638  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Termination URL reply : <?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-us">
+</vxml>
+
+29/06/2016 14:20:19:638  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : HTTP Session lost removing SCESession E9598132DECABAA01C3CE60CAF9B81D8
+29/06/2016 14:20:19:638  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : SCESession Removed
+29/06/2016 14:20:19:638 DEBUG - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : Removing 1 session stack frames.
+29/06/2016 14:20:19:638  INFO - E9598132DECABAA01C3CE60CAF9B81D8:/bbIVR : ** Popped Stack Frame [/bbIVR]
+29/06/2016 14:20:23:008  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : SCESession bound to HttpSession 7C99C0D52CA79E752C82DC2219EE218F
+29/06/2016 14:20:23:015  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Browser Version 2.1.4, terminationURL enabled : true
+29/06/2016 14:20:23:015 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : PlatformParams:getPlatformParams: __VPVarGlobalDate is 1448998449624
+29/06/2016 14:20:23:016 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : PlatformParams:getPlatformParams:Timestamp is 12/01/15 14:34:09
+29/06/2016 14:20:23:016  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : Start
+29/06/2016 14:20:23:023  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : ** Pushed Stack Frame [/bbIVR]
+29/06/2016 14:20:23:024  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___sessionid to complex: session:sessionid  as [qmpp001ykf-2016181181310-19]
+29/06/2016 14:20:23:027  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : runtime_platform : Experience Portal
+29/06/2016 14:20:23:027  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : runtime_asr : Desktop Microsoft Speech SAPI
+29/06/2016 14:20:23:029  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : MessageType is speech
+29/06/2016 14:20:23:065  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : initFlow
+29/06/2016 14:20:23:065  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+29/06/2016 14:20:23:065  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as []
+29/06/2016 14:20:23:065  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :redirectinfo___reason to complex: redirectinfo:reason  as []
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as []
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___aai to complex: session:aai  as []
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___ani to complex: session:ani  as [31001]
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___calltag to complex: session:calltag  as [qmpp001ykf-31601-2016181181310]
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___channel to complex: session:channel  as [31601]
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___dnis to complex: session:dnis  as [39000]
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___protocolname to complex: session:protocolname  as [H323]
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___protocolversion to complex: session:protocolversion  as [1.0]
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___sessionlabel to complex: session:sessionlabel  as [00001000061467224535]
+29/06/2016 14:20:23:066  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___sharedmode to complex: session:sharedmode  as [serviceprovider]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___ucid to complex: session:ucid  as [00001000061467224535]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___uui to complex: session:uui  as []
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videofps to complex: session:videofps  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [31601]
+29/06/2016 14:20:23:067  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as []
+29/06/2016 14:20:23:068  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as []
+29/06/2016 14:20:23:068  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :session___vprdnis to complex: session:vprdnis  as []
+29/06/2016 14:20:23:068  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+29/06/2016 14:20:23:068  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+29/06/2016 14:20:23:068 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZYGaoKIpE/LWGuE59lIXFBs=
+29/06/2016 14:20:23:068 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/CallInfoInitialCall?extension%3D31601&k=VEkmBndtHF%2BcpZLR78UXZYGaoKIpE%2FLWGuE59lIXFBs%3D
+29/06/2016 14:20:23:068 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.execute:  setting session cookie to 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR
+29/06/2016 14:20:23:080 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.execute: callinfo from Manager is callid=6&ani=31001&dnis=39000&extension=31601&ucID=00001000061467224535&uui= &state=established
+29/06/2016 14:20:23:080 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.processCallInfoResults: rawResponse: callid=6&ani=31001&dnis=39000&extension=31601&ucID=00001000061467224535&uui=+&state=established
+29/06/2016 14:20:23:080 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CallInfo.doGetCallInfo: Populating call info variable values...
+29/06/2016 14:20:23:080 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.setCallInfoVariableValues: Call ID 6
+29/06/2016 14:20:23:081 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.setCallInfoVariableValues: Calling # (ANI) 31001
+29/06/2016 14:20:23:081 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.setCallInfoVariableValues: Called # (DNIS) 39000
+29/06/2016 14:20:23:081 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.setCallInfoVariableValues: Ext 31601
+29/06/2016 14:20:23:081 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.setCallInfoVariableValues: UCID 00001000061467224535
+29/06/2016 14:20:23:081 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.setCallInfoVariableValues: UUI  
+29/06/2016 14:20:23:081 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.setCallInfoVariableValues: State established
+29/06/2016 14:20:23:081  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : init-Begin
+29/06/2016 14:20:23:081  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : init-setCallStart
+29/06/2016 14:20:23:082  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-setCallStart | Call Start time is: 1467224423
+29/06/2016 14:20:23:082  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : init-getConfigPath
+29/06/2016 14:20:23:082  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-getConfigPath | ivrUtil config path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/config.json
+29/06/2016 14:20:23:082  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-getConfigPath | ivrUtil cache path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/cache
+29/06/2016 14:20:23:082  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : init-checkDNIS
+29/06/2016 14:20:23:084  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-checkDNIS | Retrieving DNIS configuration for 39000
+29/06/2016 14:20:23:102  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-checkDNIS | DNIS configuration was successfully retrieved.
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-checkDNIS | Setting First Flow to supportLobby
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-checkDNIS | Setting language to english
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-checkDNIS | Setting the default transfer location to: 39150
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-checkDNIS | Setting debug mode to: false
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-checkDNIS | Setting suppress transfer to: false
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : init-checkForErrors
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : [condition1] Expression [callFlowInit:hasError] String Equal Ignorecase [true]
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : init-setLanguage
+29/06/2016 14:20:23:103  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Setting current language [english] from variable [callFlowInit:language].
+29/06/2016 14:20:23:106  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:init-setLanguage | Language has been set to:  | session:currentlanguage : english
+29/06/2016 14:20:23:106  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : init-Return
+29/06/2016 14:20:23:106 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Subflow return node "init-Return" forwarding to "selectFirstFlow"
+29/06/2016 14:20:23:107  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : selectFirstFlow
+29/06/2016 14:20:23:107  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : selectFlow-Begin
+29/06/2016 14:20:23:107  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : selectFlow-selectFirstFlow
+29/06/2016 14:20:23:107  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : [condition1] Expression [callFlowInit:firstFlow] String Equal Ignorecase [supportLobby]
+29/06/2016 14:20:23:107  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : selectFlow-supportLobby
+29/06/2016 14:20:23:108  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : supportLobby-Begin
+29/06/2016 14:20:23:108  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : supportLobby-setAttemptCountToZero
+29/06/2016 14:20:23:108  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Assigning [0] to [callFlowSupportLobby:attemptCount]
+29/06/2016 14:20:23:108  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : supportLobby-playWelcome
+29/06/2016 14:20:23:120  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : supportLobby-setTransferRule
+29/06/2016 14:20:23:120  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Assigning [support] to [callFlowInitiateTransfer:transferRule]
+29/06/2016 14:20:23:121  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : supportLobby-reportMenu
+29/06/2016 14:20:23:121  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:20:23:121  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu1]
+29/06/2016 14:20:23:121  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:20:23:121  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : supportLobby-supportLobbyMenu
+29/06/2016 14:20:24:399  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : setCallerDisconnect
+29/06/2016 14:20:24:400  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Assigning [true] to [callFlowReport:callerDisconnected]
+29/06/2016 14:20:24:400  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : reportingFlow
+29/06/2016 14:20:24:400  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : reportingFlow-Begin
+29/06/2016 14:20:24:400  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : reportingFlow-setCallDisposition
+29/06/2016 14:20:24:400  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : [condition1] Expression [callFlowReport:callerDisconnected] String Equal Ignorecase [true]
+29/06/2016 14:20:24:400  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Assigning [disconnectCaller] to [callFlowReport:callDisposition]
+29/06/2016 14:20:24:401  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : reportingFlow-reportCall
+29/06/2016 14:20:24:401  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : session id:qmpp001ykf-2016181181310-19 | bbIVR:reportingFlow-reportCall | Call End time is: 1467224424
+29/06/2016 14:20:24:411  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : reportingFlow-Return
+29/06/2016 14:20:24:411 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Subflow return node "reportingFlow-Return" forwarding to "AppEnd"
+29/06/2016 14:20:24:411  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Using SCESession 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR servlet : AppEnd
+29/06/2016 14:20:24:413 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTIEnd.execute:31601 callid  is 6
+29/06/2016 14:20:24:413 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZfykB+pnAwYjSrsNMuOr6I8=
+29/06/2016 14:20:24:413 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/End?extension%3D31601%26callid%3D6&k=VEkmBndtHF%2BcpZLR78UXZfykB%2BpnAwYjSrsNMuOr6I8%3D
+29/06/2016 14:20:24:413 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.execute:  setting session cookie to 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR
+29/06/2016 14:20:24:424 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : CTICommand.execute: callinfo from Manager is 
+29/06/2016 14:20:24:429  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Removing session from AvayaSessionTermination Servlet
+29/06/2016 14:20:24:429  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Termination URL reply : <?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-us">
+</vxml>
+
+29/06/2016 14:20:24:429  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : HTTP Session lost removing SCESession 7C99C0D52CA79E752C82DC2219EE218F
+29/06/2016 14:20:24:429  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : SCESession Removed
+29/06/2016 14:20:24:430 DEBUG - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : Removing 1 session stack frames.
+29/06/2016 14:20:24:430  INFO - 7C99C0D52CA79E752C82DC2219EE218F:/bbIVR : ** Popped Stack Frame [/bbIVR]
+29/06/2016 14:22:01:477  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : SCESession bound to HttpSession 04EEFCB67529FEF50A702C9C3E4F2D05
+29/06/2016 14:22:01:478  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Browser Version 2.1.4, terminationURL enabled : true
+29/06/2016 14:22:01:478 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : PlatformParams:getPlatformParams: __VPVarGlobalDate is 1448998449624
+29/06/2016 14:22:01:478 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : PlatformParams:getPlatformParams:Timestamp is 12/01/15 14:34:09
+29/06/2016 14:22:01:479  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : Start
+29/06/2016 14:22:01:482  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : ** Pushed Stack Frame [/bbIVR]
+29/06/2016 14:22:01:483  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___sessionid to complex: session:sessionid  as [qmpp001ykf-2016181181443-20]
+29/06/2016 14:22:01:486  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : runtime_platform : Experience Portal
+29/06/2016 14:22:01:486  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : runtime_asr : Desktop Microsoft Speech SAPI
+29/06/2016 14:22:01:488  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : MessageType is speech
+29/06/2016 14:22:06:527  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : initFlow
+29/06/2016 14:22:06:528  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+29/06/2016 14:22:06:528  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as []
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :redirectinfo___reason to complex: redirectinfo:reason  as []
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as []
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___aai to complex: session:aai  as []
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___ani to complex: session:ani  as [31001]
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___calltag to complex: session:calltag  as [qmpp001ykf-31603-2016181181443]
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___channel to complex: session:channel  as [31603]
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___dnis to complex: session:dnis  as [39000]
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___protocolname to complex: session:protocolname  as [H323]
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___protocolversion to complex: session:protocolversion  as [1.0]
+29/06/2016 14:22:06:529  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___sessionlabel to complex: session:sessionlabel  as [00001000071467224628]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___sharedmode to complex: session:sharedmode  as [serviceprovider]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___ucid to complex: session:ucid  as [00001000071467224628]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___uui to complex: session:uui  as []
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videofps to complex: session:videofps  as [unknown]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+29/06/2016 14:22:06:530  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+29/06/2016 14:22:06:531  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [31603]
+29/06/2016 14:22:06:531  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as []
+29/06/2016 14:22:06:531  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as []
+29/06/2016 14:22:06:531  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :session___vprdnis to complex: session:vprdnis  as []
+29/06/2016 14:22:06:531  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+29/06/2016 14:22:06:531  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+29/06/2016 14:22:06:531 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZToZ7QnphRL0kB9DVRxPSv4=
+29/06/2016 14:22:06:532 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/CallInfoInitialCall?extension%3D31603&k=VEkmBndtHF%2BcpZLR78UXZToZ7QnphRL0kB9DVRxPSv4%3D
+29/06/2016 14:22:06:532 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.execute:  setting session cookie to 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.execute: callinfo from Manager is callid=7&ani=31001&dnis=39000&extension=31603&ucID=00001000071467224628&uui= &state=established
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.processCallInfoResults: rawResponse: callid=7&ani=31001&dnis=39000&extension=31603&ucID=00001000071467224628&uui=+&state=established
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CallInfo.doGetCallInfo: Populating call info variable values...
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.setCallInfoVariableValues: Call ID 7
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.setCallInfoVariableValues: Calling # (ANI) 31001
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.setCallInfoVariableValues: Called # (DNIS) 39000
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.setCallInfoVariableValues: Ext 31603
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.setCallInfoVariableValues: UCID 00001000071467224628
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.setCallInfoVariableValues: UUI  
+29/06/2016 14:22:06:544 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.setCallInfoVariableValues: State established
+29/06/2016 14:22:06:545  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : init-Begin
+29/06/2016 14:22:06:545  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : init-setCallStart
+29/06/2016 14:22:06:547  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-setCallStart | Call Start time is: 1467224526
+29/06/2016 14:22:06:547  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : init-getConfigPath
+29/06/2016 14:22:06:547  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-getConfigPath | ivrUtil config path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/config.json
+29/06/2016 14:22:06:547  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-getConfigPath | ivrUtil cache path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/cache
+29/06/2016 14:22:06:547  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : init-checkDNIS
+29/06/2016 14:22:06:548  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-checkDNIS | Retrieving DNIS configuration for 39000
+29/06/2016 14:22:06:578  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-checkDNIS | DNIS configuration was successfully retrieved.
+29/06/2016 14:22:06:578  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-checkDNIS | Setting First Flow to supportLobby
+29/06/2016 14:22:06:578  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-checkDNIS | Setting language to english
+29/06/2016 14:22:06:578  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-checkDNIS | Setting the default transfer location to: 39150
+29/06/2016 14:22:06:578  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-checkDNIS | Setting debug mode to: false
+29/06/2016 14:22:06:578  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-checkDNIS | Setting suppress transfer to: false
+29/06/2016 14:22:06:578  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : init-checkForErrors
+29/06/2016 14:22:06:579  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : [condition1] Expression [callFlowInit:hasError] String Equal Ignorecase [true]
+29/06/2016 14:22:06:579  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : init-setLanguage
+29/06/2016 14:22:06:579  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Setting current language [english] from variable [callFlowInit:language].
+29/06/2016 14:22:06:584  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:init-setLanguage | Language has been set to:  | session:currentlanguage : english
+29/06/2016 14:22:06:589  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : init-Return
+29/06/2016 14:22:06:589 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Subflow return node "init-Return" forwarding to "selectFirstFlow"
+29/06/2016 14:22:06:589  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : selectFirstFlow
+29/06/2016 14:22:06:589  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : selectFlow-Begin
+29/06/2016 14:22:06:590  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : selectFlow-selectFirstFlow
+29/06/2016 14:22:06:590  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : [condition1] Expression [callFlowInit:firstFlow] String Equal Ignorecase [supportLobby]
+29/06/2016 14:22:06:590  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : selectFlow-supportLobby
+29/06/2016 14:22:06:590  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : supportLobby-Begin
+29/06/2016 14:22:06:590  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : supportLobby-setAttemptCountToZero
+29/06/2016 14:22:06:590  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Assigning [0] to [callFlowSupportLobby:attemptCount]
+29/06/2016 14:22:06:591  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : supportLobby-playWelcome
+29/06/2016 14:22:16:616  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : supportLobby-setTransferRule
+29/06/2016 14:22:16:616  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Assigning [support] to [callFlowInitiateTransfer:transferRule]
+29/06/2016 14:22:16:616  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : supportLobby-reportMenu
+29/06/2016 14:22:16:616  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:22:16:617  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu1]
+29/06/2016 14:22:16:617  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:22:16:617  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : supportLobby-supportLobbyMenu
+29/06/2016 14:22:29:331  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : supportLobby-goodIVRTransfer
+29/06/2016 14:22:29:331  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :supportLobbyMenu___confidence to complex: supportLobbyMenu:confidence  as [1]
+29/06/2016 14:22:29:331  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :supportLobbyMenu___inputmode to complex: supportLobbyMenu:inputmode  as [dtmf]
+29/06/2016 14:22:29:331  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :supportLobbyMenu___interpretation to complex: supportLobbyMenu:interpretation  as [2]
+29/06/2016 14:22:29:331  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :supportLobbyMenu___noinputcount to complex: supportLobbyMenu:noinputcount  as [0]
+29/06/2016 14:22:29:331  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :supportLobbyMenu___nomatchcount to complex: supportLobbyMenu:nomatchcount  as [0]
+29/06/2016 14:22:29:332  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :supportLobbyMenu___utterance to complex: supportLobbyMenu:utterance  as [2]
+29/06/2016 14:22:29:332  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Storing :supportLobbyMenu___value to complex: supportLobbyMenu:value  as [2]
+29/06/2016 14:22:29:332  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : goodIVRTransfer-Begin
+29/06/2016 14:22:29:332  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : goodIVRTransfer-checkLanguage
+29/06/2016 14:22:29:332  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : [condition1] Expression [callFlowInit:language] String Equal Ignorecase [english]
+29/06/2016 14:22:29:333  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : goodIVRTransfer-setAttemptCountToZero
+29/06/2016 14:22:29:333  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Assigning [0] to [callFlowGoodIVRTransfer:attemptCount]
+29/06/2016 14:22:29:333  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : goodIVRTransfer-reportMenu
+29/06/2016 14:22:29:333  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:22:29:333  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : [condition2] Expression [callFlowReport:currentMenu] String Equal [2]
+29/06/2016 14:22:29:333  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu2]
+29/06/2016 14:22:29:333  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:22:29:333  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : goodIVRTransfer-goodIVRMenu
+29/06/2016 14:22:42:458  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : setCallerDisconnect
+29/06/2016 14:22:42:459  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Assigning [true] to [callFlowReport:callerDisconnected]
+29/06/2016 14:22:42:459  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : reportingFlow
+29/06/2016 14:22:42:459  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : reportingFlow-Begin
+29/06/2016 14:22:42:459  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : reportingFlow-setCallDisposition
+29/06/2016 14:22:42:459  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : [condition1] Expression [callFlowReport:callerDisconnected] String Equal Ignorecase [true]
+29/06/2016 14:22:42:459  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Assigning [disconnectCaller] to [callFlowReport:callDisposition]
+29/06/2016 14:22:42:460  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : reportingFlow-reportCall
+29/06/2016 14:22:42:460  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : session id:qmpp001ykf-2016181181443-20 | bbIVR:reportingFlow-reportCall | Call End time is: 1467224562
+29/06/2016 14:22:42:476  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : reportingFlow-Return
+29/06/2016 14:22:42:477 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Subflow return node "reportingFlow-Return" forwarding to "AppEnd"
+29/06/2016 14:22:42:477  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Using SCESession 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR servlet : AppEnd
+29/06/2016 14:22:42:478 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTIEnd.execute:31603 callid  is 7
+29/06/2016 14:22:42:478 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZZoi5ISHge/fGuE59lIXFBs=
+29/06/2016 14:22:42:478 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/End?extension%3D31603%26callid%3D7&k=VEkmBndtHF%2BcpZLR78UXZZoi5ISHge%2FfGuE59lIXFBs%3D
+29/06/2016 14:22:42:479 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.execute:  setting session cookie to 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR
+29/06/2016 14:22:42:490 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : CTICommand.execute: callinfo from Manager is 
+29/06/2016 14:22:47:499  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Removing session from AvayaSessionTermination Servlet
+29/06/2016 14:22:47:499  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Termination URL reply : <?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-us">
+</vxml>
+
+29/06/2016 14:22:47:500  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : HTTP Session lost removing SCESession 04EEFCB67529FEF50A702C9C3E4F2D05
+29/06/2016 14:22:47:500  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : SCESession Removed
+29/06/2016 14:22:47:500 DEBUG - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : Removing 1 session stack frames.
+29/06/2016 14:22:47:500  INFO - 04EEFCB67529FEF50A702C9C3E4F2D05:/bbIVR : ** Popped Stack Frame [/bbIVR]
+29/06/2016 14:28:55:832  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : SCESession bound to HttpSession A74B78C8F06DA80DEEB0B7BEB02B06DC
+29/06/2016 14:28:55:833  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Browser Version 2.1.4, terminationURL enabled : true
+29/06/2016 14:28:55:833 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : PlatformParams:getPlatformParams: __VPVarGlobalDate is 1448998449624
+29/06/2016 14:28:55:834 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : PlatformParams:getPlatformParams:Timestamp is 12/01/15 14:34:09
+29/06/2016 14:28:55:834  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : Start
+29/06/2016 14:28:55:837  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : ** Pushed Stack Frame [/bbIVR]
+29/06/2016 14:28:55:839  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___sessionid to complex: session:sessionid  as [qmpp001ykf-2016181182143-1]
+29/06/2016 14:28:55:842  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : runtime_platform : Experience Portal
+29/06/2016 14:28:55:842  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : runtime_asr : Desktop Microsoft Speech SAPI
+29/06/2016 14:28:55:844  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : MessageType is speech
+29/06/2016 14:28:55:881  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : initFlow
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as []
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :redirectinfo___reason to complex: redirectinfo:reason  as []
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as []
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___aai to complex: session:aai  as []
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___ani to complex: session:ani  as [31001]
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___calltag to complex: session:calltag  as [qmpp001ykf-31602-2016181182143]
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___channel to complex: session:channel  as [31602]
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___dnis to complex: session:dnis  as [39000]
+29/06/2016 14:28:55:882  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___protocolname to complex: session:protocolname  as [H323]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___protocolversion to complex: session:protocolversion  as [1.0]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___sessionlabel to complex: session:sessionlabel  as [00001000081467225048]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___sharedmode to complex: session:sharedmode  as [serviceprovider]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___ucid to complex: session:ucid  as [00001000081467225048]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___uui to complex: session:uui  as []
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videofps to complex: session:videofps  as [unknown]
+29/06/2016 14:28:55:883  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+29/06/2016 14:28:55:884  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+29/06/2016 14:28:55:884  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+29/06/2016 14:28:55:884  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [31602]
+29/06/2016 14:28:55:884  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as []
+29/06/2016 14:28:55:884  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as []
+29/06/2016 14:28:55:884  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :session___vprdnis to complex: session:vprdnis  as []
+29/06/2016 14:28:55:884  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+29/06/2016 14:28:55:884  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+29/06/2016 14:28:55:884 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZTxeApQCXOcfXVpLEvKUOTg=
+29/06/2016 14:28:55:885 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/CallInfoInitialCall?extension%3D31602&k=VEkmBndtHF%2BcpZLR78UXZTxeApQCXOcfXVpLEvKUOTg%3D
+29/06/2016 14:28:55:885 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.execute:  setting session cookie to A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR
+29/06/2016 14:28:55:899 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.execute: callinfo from Manager is callid=8&ani=31001&dnis=39000&extension=31602&ucID=00001000081467225048&uui= &state=established
+29/06/2016 14:28:55:899 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.processCallInfoResults: rawResponse: callid=8&ani=31001&dnis=39000&extension=31602&ucID=00001000081467225048&uui=+&state=established
+29/06/2016 14:28:55:900 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CallInfo.doGetCallInfo: Populating call info variable values...
+29/06/2016 14:28:55:900 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.setCallInfoVariableValues: Call ID 8
+29/06/2016 14:28:55:900 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.setCallInfoVariableValues: Calling # (ANI) 31001
+29/06/2016 14:28:55:900 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.setCallInfoVariableValues: Called # (DNIS) 39000
+29/06/2016 14:28:55:900 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.setCallInfoVariableValues: Ext 31602
+29/06/2016 14:28:55:900 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.setCallInfoVariableValues: UCID 00001000081467225048
+29/06/2016 14:28:55:900 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.setCallInfoVariableValues: UUI  
+29/06/2016 14:28:55:900 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.setCallInfoVariableValues: State established
+29/06/2016 14:28:55:900  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : init-Begin
+29/06/2016 14:28:55:901  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : init-setCallStart
+29/06/2016 14:28:55:901  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-setCallStart | Call Start time is: 1467224935
+29/06/2016 14:28:55:901  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : init-getConfigPath
+29/06/2016 14:28:55:901  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-getConfigPath | ivrUtil config path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/config.json
+29/06/2016 14:28:55:901  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-getConfigPath | ivrUtil cache path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/cache
+29/06/2016 14:28:55:901  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : init-checkDNIS
+29/06/2016 14:28:55:903  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-checkDNIS | Retrieving DNIS configuration for 39000
+29/06/2016 14:28:55:914  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-checkDNIS | DNIS configuration was successfully retrieved.
+29/06/2016 14:28:55:914  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-checkDNIS | Setting First Flow to supportLobby
+29/06/2016 14:28:55:914  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-checkDNIS | Setting language to english
+29/06/2016 14:28:55:914  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-checkDNIS | Setting the default transfer location to: 39150
+29/06/2016 14:28:55:914  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-checkDNIS | Setting debug mode to: false
+29/06/2016 14:28:55:915  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-checkDNIS | Setting suppress transfer to: false
+29/06/2016 14:28:55:915  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : init-checkForErrors
+29/06/2016 14:28:55:915  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : [condition1] Expression [callFlowInit:hasError] String Equal Ignorecase [true]
+29/06/2016 14:28:55:915  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : init-setLanguage
+29/06/2016 14:28:55:915  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Setting current language [english] from variable [callFlowInit:language].
+29/06/2016 14:28:55:918  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:init-setLanguage | Language has been set to:  | session:currentlanguage : english
+29/06/2016 14:28:55:918  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : init-Return
+29/06/2016 14:28:55:918 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Subflow return node "init-Return" forwarding to "selectFirstFlow"
+29/06/2016 14:28:55:918  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : selectFirstFlow
+29/06/2016 14:28:55:919  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : selectFlow-Begin
+29/06/2016 14:28:55:919  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : selectFlow-selectFirstFlow
+29/06/2016 14:28:55:919  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : [condition1] Expression [callFlowInit:firstFlow] String Equal Ignorecase [supportLobby]
+29/06/2016 14:28:55:919  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : selectFlow-supportLobby
+29/06/2016 14:28:55:919  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : supportLobby-Begin
+29/06/2016 14:28:55:919  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : supportLobby-setAttemptCountToZero
+29/06/2016 14:28:55:920  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Assigning [0] to [callFlowSupportLobby:attemptCount]
+29/06/2016 14:28:55:920  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : supportLobby-playWelcome
+29/06/2016 14:28:55:935  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : supportLobby-setTransferRule
+29/06/2016 14:28:55:936  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Assigning [support] to [callFlowInitiateTransfer:transferRule]
+29/06/2016 14:28:55:936  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : supportLobby-reportMenu
+29/06/2016 14:28:55:936  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:28:55:936  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu1]
+29/06/2016 14:28:55:936  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:28:55:936  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : supportLobby-supportLobbyMenu
+29/06/2016 14:29:03:509  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : setCallerDisconnect
+29/06/2016 14:29:03:509  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Assigning [true] to [callFlowReport:callerDisconnected]
+29/06/2016 14:29:03:510  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : reportingFlow
+29/06/2016 14:29:03:510  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : reportingFlow-Begin
+29/06/2016 14:29:03:510  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : reportingFlow-setCallDisposition
+29/06/2016 14:29:03:510  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : [condition1] Expression [callFlowReport:callerDisconnected] String Equal Ignorecase [true]
+29/06/2016 14:29:03:510  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Assigning [disconnectCaller] to [callFlowReport:callDisposition]
+29/06/2016 14:29:03:510  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : reportingFlow-reportCall
+29/06/2016 14:29:03:511  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : session id:qmpp001ykf-2016181182143-1 | bbIVR:reportingFlow-reportCall | Call End time is: 1467224943
+29/06/2016 14:29:03:524  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : reportingFlow-Return
+29/06/2016 14:29:03:524 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Subflow return node "reportingFlow-Return" forwarding to "AppEnd"
+29/06/2016 14:29:03:524  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Using SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR servlet : AppEnd
+29/06/2016 14:29:03:527 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTIEnd.execute:31602 callid  is 8
+29/06/2016 14:29:03:527 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZa9JdoF6WsJXzix6oMt3evU=
+29/06/2016 14:29:03:528 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/End?extension%3D31602%26callid%3D8&k=VEkmBndtHF%2BcpZLR78UXZa9JdoF6WsJXzix6oMt3evU%3D
+29/06/2016 14:29:03:528 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.execute:  setting session cookie to A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR
+29/06/2016 14:29:03:536 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : CTICommand.execute: callinfo from Manager is 
+29/06/2016 14:29:03:542  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Removing session from AvayaSessionTermination Servlet
+29/06/2016 14:29:03:542  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Termination URL reply : <?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-us">
+</vxml>
+
+29/06/2016 14:29:03:542  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : HTTP Session lost removing SCESession A74B78C8F06DA80DEEB0B7BEB02B06DC
+29/06/2016 14:29:03:542  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : SCESession Removed
+29/06/2016 14:29:03:542 DEBUG - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : Removing 1 session stack frames.
+29/06/2016 14:29:03:542  INFO - A74B78C8F06DA80DEEB0B7BEB02B06DC:/bbIVR : ** Popped Stack Frame [/bbIVR]
+29/06/2016 14:33:50:210  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : SCESession bound to HttpSession 49FF4A7C36C784F4CA6B8640F6533377
+29/06/2016 14:33:50:211  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Browser Version 2.1.4, terminationURL enabled : true
+29/06/2016 14:33:50:211 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : PlatformParams:getPlatformParams: __VPVarGlobalDate is 1448998449624
+29/06/2016 14:33:50:211 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : PlatformParams:getPlatformParams:Timestamp is 12/01/15 14:34:09
+29/06/2016 14:33:50:212  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : Start
+29/06/2016 14:33:50:214  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : ** Pushed Stack Frame [/bbIVR]
+29/06/2016 14:33:50:216  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___sessionid to complex: session:sessionid  as [qmpp001ykf-2016181182637-2]
+29/06/2016 14:33:50:219  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : runtime_platform : Experience Portal
+29/06/2016 14:33:50:219  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : runtime_asr : Desktop Microsoft Speech SAPI
+29/06/2016 14:33:50:222  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : MessageType is speech
+29/06/2016 14:33:50:257  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : initFlow
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :_sipcallid to simple: _sipcallid  as [unknown]
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :redirectinfo___presentationinfo to complex: redirectinfo:presentationinfo  as []
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :redirectinfo___reason to complex: redirectinfo:reason  as []
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :redirectinfo___screeninginfo to complex: redirectinfo:screeninginfo  as []
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :redirectinfo___uri to complex: redirectinfo:uri  as []
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___aai to complex: session:aai  as []
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___ani to complex: session:ani  as [31001]
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___calltag to complex: session:calltag  as [qmpp001ykf-31608-2016181182637]
+29/06/2016 14:33:50:258  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___channel to complex: session:channel  as [31608]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___dnis to complex: session:dnis  as [39000]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___mediatype to complex: session:mediatype  as [unknown]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___protocolname to complex: session:protocolname  as [H323]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___protocolversion to complex: session:protocolversion  as [1.0]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___sessionlabel to complex: session:sessionlabel  as [00001000091467225341]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___sharedmode to complex: session:sharedmode  as [serviceprovider]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___ucid to complex: session:ucid  as [00001000091467225341]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___uui to complex: session:uui  as []
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videobitrate to complex: session:videobitrate  as [unknown]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videocodec to complex: session:videocodec  as [unknown]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videoenabled to complex: session:videoenabled  as [unknown]
+29/06/2016 14:33:50:259  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videofarfmtp to complex: session:videofarfmtp  as [unknown]
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videoformat to complex: session:videoformat  as [unknown]
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videofps to complex: session:videofps  as [unknown]
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videoheight to complex: session:videoheight  as [unknown]
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videonearfmtp to complex: session:videonearfmtp  as [unknown]
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___videowidth to complex: session:videowidth  as [unknown]
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___vpcalledextension to complex: session:vpcalledextension  as [31608]
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___vpcoveragereason to complex: session:vpcoveragereason  as []
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___vpcoveragetype to complex: session:vpcoveragetype  as []
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :session___vprdnis to complex: session:vprdnis  as []
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :shareduui___id to complex: shareduui:id  as [unknown]
+29/06/2016 14:33:50:260  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Storing :shareduui___value to complex: shareduui:value  as [unknown]
+29/06/2016 14:33:50:261 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZeLN/j71gS252VaRLGy1TDk=
+29/06/2016 14:33:50:261 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/CallInfoInitialCall?extension%3D31608&k=VEkmBndtHF%2BcpZLR78UXZeLN%2Fj71gS252VaRLGy1TDk%3D
+29/06/2016 14:33:50:261 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.execute:  setting session cookie to 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR
+29/06/2016 14:33:50:268 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.execute: callinfo from Manager is callid=9&ani=31001&dnis=39000&extension=31608&ucID=00001000091467225341&uui= &state=established
+29/06/2016 14:33:50:268 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.processCallInfoResults: rawResponse: callid=9&ani=31001&dnis=39000&extension=31608&ucID=00001000091467225341&uui=+&state=established
+29/06/2016 14:33:50:269 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CallInfo.doGetCallInfo: Populating call info variable values...
+29/06/2016 14:33:50:269 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.setCallInfoVariableValues: Call ID 9
+29/06/2016 14:33:50:269 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.setCallInfoVariableValues: Calling # (ANI) 31001
+29/06/2016 14:33:50:269 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.setCallInfoVariableValues: Called # (DNIS) 39000
+29/06/2016 14:33:50:269 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.setCallInfoVariableValues: Ext 31608
+29/06/2016 14:33:50:269 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.setCallInfoVariableValues: UCID 00001000091467225341
+29/06/2016 14:33:50:269 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.setCallInfoVariableValues: UUI  
+29/06/2016 14:33:50:269 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.setCallInfoVariableValues: State established
+29/06/2016 14:33:50:270  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : init-Begin
+29/06/2016 14:33:50:270  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : init-setCallStart
+29/06/2016 14:33:50:270  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-setCallStart | Call Start time is: 1467225230
+29/06/2016 14:33:50:270  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : init-getConfigPath
+29/06/2016 14:33:50:270  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-getConfigPath | ivrUtil config path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/config.json
+29/06/2016 14:33:50:270  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-getConfigPath | ivrUtil cache path set to: /usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/cache
+29/06/2016 14:33:50:271  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : init-checkDNIS
+29/06/2016 14:33:50:272  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-checkDNIS | Retrieving DNIS configuration for 39000
+29/06/2016 14:33:50:286  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-checkDNIS | DNIS configuration was successfully retrieved.
+29/06/2016 14:33:50:286  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-checkDNIS | Setting First Flow to supportLobby
+29/06/2016 14:33:50:286  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-checkDNIS | Setting language to english
+29/06/2016 14:33:50:286  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-checkDNIS | Setting the default transfer location to: 39150
+29/06/2016 14:33:50:286  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-checkDNIS | Setting debug mode to: false
+29/06/2016 14:33:50:286  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-checkDNIS | Setting suppress transfer to: false
+29/06/2016 14:33:50:287  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : init-checkForErrors
+29/06/2016 14:33:50:287  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : [condition1] Expression [callFlowInit:hasError] String Equal Ignorecase [true]
+29/06/2016 14:33:50:287  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : init-setLanguage
+29/06/2016 14:33:50:287  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Setting current language [english] from variable [callFlowInit:language].
+29/06/2016 14:33:50:290  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:init-setLanguage | Language has been set to:  | session:currentlanguage : english
+29/06/2016 14:33:50:290  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : init-Return
+29/06/2016 14:33:50:290 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Subflow return node "init-Return" forwarding to "selectFirstFlow"
+29/06/2016 14:33:50:291  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : selectFirstFlow
+29/06/2016 14:33:50:291  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : selectFlow-Begin
+29/06/2016 14:33:50:291  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : selectFlow-selectFirstFlow
+29/06/2016 14:33:50:291  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : [condition1] Expression [callFlowInit:firstFlow] String Equal Ignorecase [supportLobby]
+29/06/2016 14:33:50:291  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : selectFlow-supportLobby
+29/06/2016 14:33:50:292  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : supportLobby-Begin
+29/06/2016 14:33:50:292  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : supportLobby-setAttemptCountToZero
+29/06/2016 14:33:50:292  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Assigning [0] to [callFlowSupportLobby:attemptCount]
+29/06/2016 14:33:50:292  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : supportLobby-playWelcome
+29/06/2016 14:33:50:306  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : supportLobby-setTransferRule
+29/06/2016 14:33:50:307  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Assigning [support] to [callFlowInitiateTransfer:transferRule]
+29/06/2016 14:33:50:307  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : supportLobby-reportMenu
+29/06/2016 14:33:50:307  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : [condition1] Expression [callFlowReport:currentMenu] String Equal [1]
+29/06/2016 14:33:50:307  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Assigning [menu(L)] to [callFlowReport:menu1]
+29/06/2016 14:33:50:307  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Incrementing [callFlowReport:currentMenu]
+29/06/2016 14:33:50:308  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : supportLobby-supportLobbyMenu
+29/06/2016 14:33:52:023  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : setCallerDisconnect
+29/06/2016 14:33:52:023  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Assigning [true] to [callFlowReport:callerDisconnected]
+29/06/2016 14:33:52:023  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : reportingFlow
+29/06/2016 14:33:52:023  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : reportingFlow-Begin
+29/06/2016 14:33:52:024  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : reportingFlow-setCallDisposition
+29/06/2016 14:33:52:024  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : [condition1] Expression [callFlowReport:callerDisconnected] String Equal Ignorecase [true]
+29/06/2016 14:33:52:024  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Assigning [disconnectCaller] to [callFlowReport:callDisposition]
+29/06/2016 14:33:52:024  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : reportingFlow-reportCall
+29/06/2016 14:33:52:024  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : session id:qmpp001ykf-2016181182637-2 | bbIVR:reportingFlow-reportCall | Call End time is: 1467225232
+29/06/2016 14:33:52:039  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : reportingFlow-Return
+29/06/2016 14:33:52:040 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Subflow return node "reportingFlow-Return" forwarding to "AppEnd"
+29/06/2016 14:33:52:040  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Using SCESession 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR servlet : AppEnd
+29/06/2016 14:33:52:041 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTIEnd.execute:31608 callid  is 9
+29/06/2016 14:33:52:041 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.execute: encrypted value  is VEkmBndtHF+cpZLR78UXZbZpkcnVYmZukB9DVRxPSv4=
+29/06/2016 14:33:52:041 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.execute: request to manager is http://qvxml001ykf:8080/aesconnector/End?extension%3D31608%26callid%3D9&k=VEkmBndtHF%2BcpZLR78UXZbZpkcnVYmZukB9DVRxPSv4%3D
+29/06/2016 14:33:52:041 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.execute:  setting session cookie to 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR
+29/06/2016 14:33:52:045 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : CTICommand.execute: callinfo from Manager is 
+29/06/2016 14:33:52:052  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Removing session from AvayaSessionTermination Servlet
+29/06/2016 14:33:52:052  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Termination URL reply : <?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns="http://www.w3.org/2001/vxml" xml:lang="en-us">
+</vxml>
+
+29/06/2016 14:33:52:052  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : HTTP Session lost removing SCESession 49FF4A7C36C784F4CA6B8640F6533377
+29/06/2016 14:33:52:052  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : SCESession Removed
+29/06/2016 14:33:52:052 DEBUG - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : Removing 1 session stack frames.
+29/06/2016 14:33:52:052  INFO - 49FF4A7C36C784F4CA6B8640F6533377:/bbIVR : ** Popped Stack Frame [/bbIVR]
