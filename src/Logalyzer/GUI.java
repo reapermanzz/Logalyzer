@@ -101,16 +101,8 @@ public class GUI extends JFrame {
                 logalyzer.setGrepPath(grep.getText());
                 logalyzer.setLogPath(log.getText());
                 logalyzer.displayToConsole(System.getProperty("line.separator") + "Searching for Java Session ID: " + pattern.getText());
-                try {
-                    StringBuilder searchReturn = logalyzer.searchJavaSession(pattern.getText().toString());
-                    if (searchReturn.toString().equalsIgnoreCase("")) {
-                        displayConsole.setText("No pattern found inside that path");
-                    } else {
-                        displayConsole.setText(searchReturn.toString());
-                    }
-                } catch (LogException err) {
-                    displayConsole.setText("Error occurred: " + err.getMessage());
-                }
+                createNewThread(guiThreads.get("grep")).start();
+
             }
         });
         pullLogsFromServer.addActionListener(new ActionListener() {
@@ -155,8 +147,25 @@ public class GUI extends JFrame {
                 }
             }
         });
+        final Thread grep = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    logalyzer.displayToConsole("Starting GREP search thread...");
+                    StringBuilder searchReturn = logalyzer.searchJavaSession(pattern.getText());
+                    if (searchReturn.toString().equalsIgnoreCase("")) {
+                        displayConsole.setText("No pattern found inside that path");
+                    } else {
+                        displayConsole.setText(searchReturn.toString());
+                    }
+                } catch (LogException err) {
+                    logalyzer.displayToConsole("Error occurred: " + err.getMessage());
+                }
+            }
+        });
         threads.put("console", refreshConsole);
         threads.put("grabLogs", grabLogs);
+        threads.put("grep", grep);
         return threads;
     }
 
@@ -164,7 +173,7 @@ public class GUI extends JFrame {
         thread.start();
     }
 
-    private Thread createNewThread(Thread thread){
+    private Thread createNewThread(Thread thread) {
         return new Thread(thread);
     }
 }

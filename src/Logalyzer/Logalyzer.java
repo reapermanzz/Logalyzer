@@ -12,10 +12,8 @@ import net.sf.jftp.system.logging.Log;
 
 import java.io.*;
 import java.net.URLDecoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Vector;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 
 /**
@@ -28,6 +26,7 @@ public class Logalyzer {
     private StringBuilder consoleLog = new StringBuilder("");
     private String logLevel = "info";
     private Map<String, String> credentials = null;
+    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
     public Logalyzer() {
 
@@ -93,7 +92,7 @@ public class Logalyzer {
     }
 
     public void displayToConsole(String message) {
-        message = this.getLogLevel() + ":" + message;
+        message = dateFormat.format(new Date())+":"+this.getLogLevel() + ":" + message;
         this.getConsoleLog().append(System.getProperty("line.separator")+message);
         System.out.println("******************************************************************");
         System.out.println("BEGINNING CONSOLE LOG");
@@ -116,13 +115,14 @@ public class Logalyzer {
                 Process p = null;
                 File file = new File(this.getLogPath());
                 if (new File(this.getLogPath()).isDirectory()) {
-                    this.displayToConsole("Running Command: " + this.getGrepPath() + " -r \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
-                    p = Runtime.getRuntime().exec(this.getGrepPath() + " -r --exclude-dir=session_captures \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
+                    this.displayToConsole("Running Command: " + this.getGrepPath() + " -h -r --exclude-dir=session_captures \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
+                    p = Runtime.getRuntime().exec(this.getGrepPath() + " -h -r --exclude-dir=session_captures \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
                 } else {
-                    this.displayToConsole("Running Command: " + this.getGrepPath() + " \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
-                    p = Runtime.getRuntime().exec(this.getGrepPath() + " \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
+                    this.displayToConsole("Running Command: " + this.getGrepPath() + " -h \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
+                    p = Runtime.getRuntime().exec(this.getGrepPath() + " -h \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
                 }
-                p.waitFor();
+                //p.waitFor();
+                this.displayToConsole("The command finished running");
                 BufferedReader bri = new BufferedReader(new InputStreamReader(p.getInputStream()));
                 while ((line = bri.readLine()) != null) {
                     output.append(System.getProperty("line.separator") + line);
