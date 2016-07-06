@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1020b5b6-1d1e-4287-879d-27c9b7f09d1e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Logalyzer/ThreadMonitor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Logalyzer/GUI.java" afterPath="$PROJECT_DIR$/src/Logalyzer/GUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Logalyzer/Logalyzer.java" afterPath="$PROJECT_DIR$/src/Logalyzer/Logalyzer.java" />
     </list>
     <ignored path="BBIVRLogalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,20 +30,14 @@
       <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Logalyzer/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+            <state relative-caret-position="578">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#GUI#0" expanded="false" />
-                <element signature="e#6061#6313#0" expanded="true" />
-                <element signature="e#6312#6313#0" expanded="true" />
-                <element signature="e#6483#6931#0" expanded="true" />
-                <element signature="e#6930#6931#0" expanded="true" />
-                <element signature="e#6977#9107#0" expanded="true" />
-                <element signature="e#9106#9107#0" expanded="true" />
-                <element signature="e#9149#9875#0" expanded="true" />
-                <element signature="e#9874#9875#0" expanded="true" />
-                <element signature="e#10080#10081#0" expanded="true" />
-                <element signature="e#10110#10111#0" expanded="true" />
+                <element signature="method#initGUI#0;class#GUI#0" expanded="false" />
+                <element signature="method#runGUI#0;class#GUI#0" expanded="false" />
+                <element signature="method#initThreads#0;class#GUI#0" expanded="false" />
+                <element signature="method#createNewThread#0;class#GUI#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,7 +46,7 @@
       <file leaf-file-name="ThreadMonitor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Logalyzer/ThreadMonitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
+            <state relative-caret-position="496">
               <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -64,45 +58,24 @@
       <file leaf-file-name="Logalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Logalyzer/Logalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="28" column="76" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="76" />
+            <state relative-caret-position="518">
+              <caret line="221" column="62" selection-start-line="221" selection-start-column="62" selection-end-line="221" selection-end-column="62" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Logalyzer#0" expanded="false" />
+                <element signature="method#Logalyzer#0;class#Logalyzer#0" expanded="false" />
                 <element signature="method#Logalyzer#1;class#Logalyzer#0" expanded="false" />
                 <element signature="method#Logalyzer#2;class#Logalyzer#0" expanded="false" />
-                <element signature="e#2160#2161#0" expanded="true" />
-                <element signature="e#2194#2195#0" expanded="true" />
-                <element signature="e#2261#2262#0" expanded="true" />
-                <element signature="e#2307#2308#0" expanded="true" />
-                <element signature="method#main#0;class#Logalyzer#0" expanded="false" />
+                <element signature="method#displayToConsole#0;class#Logalyzer#0" expanded="false" />
+                <element signature="method#searchJavaSession#0;class#Logalyzer#0" expanded="false" />
                 <element signature="method#isFilenameValid#0;class#Logalyzer#0" expanded="false" />
                 <element signature="method#writeToFile#0;class#Logalyzer#0" expanded="false" />
                 <element signature="method#getSessionIdsFromLog#0;class#Logalyzer#0" expanded="false" />
                 <element signature="method#extractSessionId#0;class#Logalyzer#0" expanded="false" />
+                <element signature="method#sftpFromServer#0;class#Logalyzer#0" expanded="false" />
+                <element signature="method#parseSSHCredentials#0;class#Logalyzer#0" expanded="false" />
+                <element signature="class#11148:11185" expanded="false" />
+                <element signature="method#unZipLogs#0;class#Logalyzer#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogalyzerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Logalyzer/LogalyzerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CLI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Logalyzer/CLI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -112,7 +85,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
               <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="e#152#153#0" expanded="false" />
+                <element signature="e#182#183#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,8 +116,8 @@
         <option value="$PROJECT_DIR$/src/Logalyzer/LogException.java" />
         <option value="$PROJECT_DIR$/src/Logalyzer/CLI.java" />
         <option value="$PROJECT_DIR$/src/Logalyzer/LogalyzerTest.java" />
-        <option value="$PROJECT_DIR$/src/Logalyzer/Logalyzer.java" />
         <option value="$PROJECT_DIR$/src/Logalyzer/ThreadMonitor.java" />
+        <option value="$PROJECT_DIR$/src/Logalyzer/Logalyzer.java" />
         <option value="$PROJECT_DIR$/src/Logalyzer/GUI.java" />
       </list>
     </option>
@@ -162,8 +138,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -190,7 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,7 +223,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -259,7 +235,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/libraries/jsch-0.1.53.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="LogalyzerTest.testRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -822,6 +798,7 @@
       <workItem from="1467308415881" duration="7051000" />
       <workItem from="1467352592820" duration="46479000" />
       <workItem from="1467676084940" duration="41885000" />
+      <workItem from="1467811528156" duration="6039000" />
     </task>
     <servers />
   </component>
@@ -858,37 +835,37 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97292000" />
+    <option name="totallyTimeSpent" value="103331000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767624" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -904,15 +881,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Logalyzer/GUI.java</url>
-          <line>215</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -927,16 +896,68 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#GUI#0" expanded="false" />
-            <element signature="e#6061#6313#0" expanded="true" />
-            <element signature="e#6312#6313#0" expanded="true" />
-            <element signature="e#6483#6931#0" expanded="true" />
-            <element signature="e#6930#6931#0" expanded="true" />
-            <element signature="e#6977#9107#0" expanded="true" />
-            <element signature="e#9106#9107#0" expanded="true" />
-            <element signature="e#9149#9875#0" expanded="true" />
-            <element signature="e#9874#9875#0" expanded="true" />
-            <element signature="e#10080#10081#0" expanded="true" />
-            <element signature="e#10110#10111#0" expanded="true" />
+            <element signature="method#initGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#runGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#initThreads#0;class#GUI#0" expanded="false" />
+            <element signature="method#createNewThread#0;class#GUI#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/ThreadMonitor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/Logalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#Logalyzer#0" expanded="false" />
+            <element signature="method#Logalyzer#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#Logalyzer#1;class#Logalyzer#0" expanded="false" />
+            <element signature="method#Logalyzer#2;class#Logalyzer#0" expanded="false" />
+            <element signature="method#displayToConsole#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#searchJavaSession#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#isFilenameValid#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#writeToFile#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#getSessionIdsFromLog#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#extractSessionId#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#sftpFromServer#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#parseSSHCredentials#0;class#Logalyzer#0" expanded="false" />
+            <element signature="class#11148:11185" expanded="false" />
+            <element signature="method#unZipLogs#0;class#Logalyzer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/LogException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#152#153#0" expanded="false" />
+            <element signature="e#182#183#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#GUI#0" expanded="false" />
+            <element signature="method#initGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#runGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#initThreads#0;class#GUI#0" expanded="false" />
+            <element signature="method#createNewThread#0;class#GUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -946,46 +967,34 @@
         <state relative-caret-position="2400">
           <caret line="266" column="17" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#Logalyzer#0" expanded="false" />
+            <element signature="method#Logalyzer#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#1;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#2;class#Logalyzer#0" expanded="false" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="method#main#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#displayToConsole#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#searchJavaSession#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#isFilenameValid#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#writeToFile#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#getSessionIdsFromLog#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#extractSessionId#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#sftpFromServer#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#parseSSHCredentials#0;class#Logalyzer#0" expanded="false" />
+            <element signature="class#11148:11185" expanded="false" />
+            <element signature="method#unZipLogs#0;class#Logalyzer#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logalyzer/LogalyzerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="47" column="72" selection-start-line="47" selection-start-column="72" selection-end-line="47" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logalyzer/CLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/LogalyzerTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/CLI.java" />
     <entry file="file://$PROJECT_DIR$/src/Logalyzer/LogException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#152#153#0" expanded="false" />
+            <element signature="e#182#183#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -995,16 +1004,10 @@
           <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding>
             <element signature="docComment;class#GUI#0" expanded="false" />
-            <element signature="e#6061#6313#0" expanded="true" />
-            <element signature="e#6312#6313#0" expanded="true" />
-            <element signature="e#6483#6931#0" expanded="true" />
-            <element signature="e#6930#6931#0" expanded="true" />
-            <element signature="e#6977#9107#0" expanded="true" />
-            <element signature="e#9106#9107#0" expanded="true" />
-            <element signature="e#9149#9875#0" expanded="true" />
-            <element signature="e#9874#9875#0" expanded="true" />
-            <element signature="e#10080#10081#0" expanded="true" />
-            <element signature="e#10110#10111#0" expanded="true" />
+            <element signature="method#initGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#runGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#initThreads#0;class#GUI#0" expanded="false" />
+            <element signature="method#createNewThread#0;class#GUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1014,19 +1017,20 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#Logalyzer#0" expanded="false" />
+            <element signature="method#Logalyzer#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#1;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#2;class#Logalyzer#0" expanded="false" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="method#main#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#displayToConsole#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#searchJavaSession#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#isFilenameValid#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#writeToFile#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#getSessionIdsFromLog#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#extractSessionId#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#sftpFromServer#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#parseSSHCredentials#0;class#Logalyzer#0" expanded="false" />
+            <element signature="class#11148:11185" expanded="false" />
+            <element signature="method#unZipLogs#0;class#Logalyzer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1035,7 +1039,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#152#153#0" expanded="false" />
+            <element signature="e#182#183#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,16 +1052,10 @@
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
             <element signature="docComment;class#GUI#0" expanded="false" />
-            <element signature="e#6061#6313#0" expanded="true" />
-            <element signature="e#6312#6313#0" expanded="true" />
-            <element signature="e#6483#6931#0" expanded="true" />
-            <element signature="e#6930#6931#0" expanded="true" />
-            <element signature="e#6977#9107#0" expanded="true" />
-            <element signature="e#9106#9107#0" expanded="true" />
-            <element signature="e#9149#9875#0" expanded="true" />
-            <element signature="e#9874#9875#0" expanded="true" />
-            <element signature="e#10080#10081#0" expanded="true" />
-            <element signature="e#10110#10111#0" expanded="true" />
+            <element signature="method#initGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#runGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#initThreads#0;class#GUI#0" expanded="false" />
+            <element signature="method#createNewThread#0;class#GUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1064,19 +1065,20 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#Logalyzer#0" expanded="false" />
+            <element signature="method#Logalyzer#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#1;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#2;class#Logalyzer#0" expanded="false" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="method#main#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#displayToConsole#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#searchJavaSession#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#isFilenameValid#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#writeToFile#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#getSessionIdsFromLog#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#extractSessionId#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#sftpFromServer#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#parseSSHCredentials#0;class#Logalyzer#0" expanded="false" />
+            <element signature="class#11148:11185" expanded="false" />
+            <element signature="method#unZipLogs#0;class#Logalyzer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1085,7 +1087,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#152#153#0" expanded="false" />
+            <element signature="e#182#183#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1095,16 +1100,10 @@
           <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
             <element signature="docComment;class#GUI#0" expanded="false" />
-            <element signature="e#6061#6313#0" expanded="true" />
-            <element signature="e#6312#6313#0" expanded="true" />
-            <element signature="e#6483#6931#0" expanded="true" />
-            <element signature="e#6930#6931#0" expanded="true" />
-            <element signature="e#6977#9107#0" expanded="true" />
-            <element signature="e#9106#9107#0" expanded="true" />
-            <element signature="e#9149#9875#0" expanded="true" />
-            <element signature="e#9874#9875#0" expanded="true" />
-            <element signature="e#10080#10081#0" expanded="true" />
-            <element signature="e#10110#10111#0" expanded="true" />
+            <element signature="method#initGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#runGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#initThreads#0;class#GUI#0" expanded="false" />
+            <element signature="method#createNewThread#0;class#GUI#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,19 +1113,20 @@
         <state relative-caret-position="80">
           <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#Logalyzer#0" expanded="false" />
+            <element signature="method#Logalyzer#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#1;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#2;class#Logalyzer#0" expanded="false" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="method#main#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#displayToConsole#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#searchJavaSession#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#isFilenameValid#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#writeToFile#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#getSessionIdsFromLog#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#extractSessionId#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#sftpFromServer#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#parseSSHCredentials#0;class#Logalyzer#0" expanded="false" />
+            <element signature="class#11148:11185" expanded="false" />
+            <element signature="method#unZipLogs#0;class#Logalyzer#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1135,7 +1135,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#152#153#0" expanded="false" />
+            <element signature="e#182#183#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,58 +1146,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#152#153#0" expanded="false" />
+            <element signature="e#182#183#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logalyzer/CLI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/CLI.java" />
     <entry file="file://$PROJECT_DIR$/grep_for_59BF2C55C1440A8FEEEBB1338D9D6064.txt" />
     <entry file="file://$PROJECT_DIR$/trace1.log" />
     <entry file="file://$PROJECT_DIR$/test.txt" />
     <entry file="file://$PROJECT_DIR$/error.log" />
     <entry file="file://$PROJECT_DIR$/access.log" />
-    <entry file="file://$PROJECT_DIR$/src/Logalyzer/LogalyzerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/LogalyzerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Logalyzer/Logalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="76" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="76" />
+        <state relative-caret-position="518">
+          <caret line="221" column="62" selection-start-line="221" selection-start-column="62" selection-end-line="221" selection-end-column="62" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="docComment;class#Logalyzer#0" expanded="false" />
+            <element signature="method#Logalyzer#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#1;class#Logalyzer#0" expanded="false" />
             <element signature="method#Logalyzer#2;class#Logalyzer#0" expanded="false" />
-            <element signature="e#2160#2161#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="method#main#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#displayToConsole#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#searchJavaSession#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#isFilenameValid#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#writeToFile#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#getSessionIdsFromLog#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#extractSessionId#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#sftpFromServer#0;class#Logalyzer#0" expanded="false" />
+            <element signature="method#parseSSHCredentials#0;class#Logalyzer#0" expanded="false" />
+            <element signature="class#11148:11185" expanded="false" />
+            <element signature="method#unZipLogs#0;class#Logalyzer#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Logalyzer/ThreadMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
+        <state relative-caret-position="496">
           <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1204,20 +1195,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Logalyzer/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="132" column="33" selection-start-line="132" selection-start-column="33" selection-end-line="132" selection-end-column="33" />
+        <state relative-caret-position="578">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#GUI#0" expanded="false" />
-            <element signature="e#6061#6313#0" expanded="true" />
-            <element signature="e#6312#6313#0" expanded="true" />
-            <element signature="e#6483#6931#0" expanded="true" />
-            <element signature="e#6930#6931#0" expanded="true" />
-            <element signature="e#6977#9107#0" expanded="true" />
-            <element signature="e#9106#9107#0" expanded="true" />
-            <element signature="e#9149#9875#0" expanded="true" />
-            <element signature="e#9874#9875#0" expanded="true" />
-            <element signature="e#10080#10081#0" expanded="true" />
-            <element signature="e#10110#10111#0" expanded="true" />
+            <element signature="method#initGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#runGUI#0;class#GUI#0" expanded="false" />
+            <element signature="method#initThreads#0;class#GUI#0" expanded="false" />
+            <element signature="method#createNewThread#0;class#GUI#0" expanded="false" />
           </folding>
         </state>
       </provider>

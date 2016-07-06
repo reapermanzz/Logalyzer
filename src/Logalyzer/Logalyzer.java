@@ -25,6 +25,7 @@ public class Logalyzer {
     private String grepPath;
     private StringBuilder consoleLog = new StringBuilder("");
     private String logLevel = "info";
+    private String gzipPath;
     private Map<String, String> credentials = null;
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 
@@ -83,6 +84,14 @@ public class Logalyzer {
         this.consoleLog = consoleLog;
     }
 
+    public String getGzipPath() {
+        return gzipPath;
+    }
+
+    public void setGzipPath(String gzipPath) {
+        this.gzipPath = gzipPath;
+    }
+
     public Map<String, String> getCredentials() {
         return credentials;
     }
@@ -103,9 +112,6 @@ public class Logalyzer {
         System.out.println("******************************************************************");
     }
 
-    public static void main(String args[]) {
-    }
-
     public StringBuilder searchJavaSession(String sessionId) throws LogException {
         try {
             StringBuilder output = new StringBuilder();
@@ -114,12 +120,15 @@ public class Logalyzer {
                 String line;
                 Process p = null;
                 File file = new File(this.getLogPath());
+                String command;
                 if (new File(this.getLogPath()).isDirectory()) {
-                    this.displayToConsole("Running Command: " + this.getGrepPath() + " -h -r --exclude-dir=session_captures \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
-                    p = Runtime.getRuntime().exec(this.getGrepPath() + " -h -r --exclude-dir=session_captures \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
+                    command = this.getGrepPath() + "grep.exe -h -r --exclude-dir=session_captures \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"";
+                    this.displayToConsole("Running Command: " + command);
+                    p = Runtime.getRuntime().exec(command);
                 } else {
-                    this.displayToConsole("Running Command: " + this.getGrepPath() + " -h \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
-                    p = Runtime.getRuntime().exec(this.getGrepPath() + " -h \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"");
+                    command = this.getGrepPath() + "grep.exe -h \"" + sessionId + "\" " + "\"" + this.getLogPath() + "\"";
+                    this.displayToConsole("Running Command: " + command);
+                    p = Runtime.getRuntime().exec(command);
                 }
                 //p.waitFor();
                 this.displayToConsole("The command finished running");
@@ -149,7 +158,7 @@ public class Logalyzer {
                 )
 
         {
-            throw new LogException("Error occurred: " + e.getMessage());
+            throw new LogException("Error occurred running GREP, be sure to provide DIRECTORY path only: " + e.getMessage());
         }
 
 
@@ -221,6 +230,10 @@ public class Logalyzer {
         ChannelSftp channelSftp = null;
 
         try {
+            File sessionDirectory = new File("." + File.separator + "downloaded_logs");
+            if (!sessionDirectory.exists()) {
+                sessionDirectory.mkdir();
+            }
             JSch jsch = new JSch();
             session = jsch.getSession(usr, host, 22);
             session.setPassword(pwd);
@@ -244,13 +257,13 @@ public class Logalyzer {
                 this.displayToConsole("About to download file: " + c.getFilename());
                 File newFile = null;
                 if (this.logPath == null) {
-                    this.displayToConsole("Trying to create file: " + System.getProperty("user.dir") + System.getProperty("file.separator") + host + "_" + c.getFilename());
-                    newFile = new File(System.getProperty("user.dir") + System.getProperty("file.separator") + host + "_" + c.getFilename());
+                    this.displayToConsole("Trying to create file: " + System.getProperty("user.dir") + File.separator + "downloaded_logs" + File.separator + host + "_" + c.getFilename());
+                    newFile = new File(System.getProperty("user.dir") + File.separator + "downloaded_logs" + File.separator + host + "_" + c.getFilename());
                 } else {
-                    newFile = new File(this.logPath + "/" + host + "_" + c.getFilename());
+                    newFile = new File(this.logPath + File.separator + "downloaded_logs" + File.separator + host + "_" + c.getFilename());
                 }
                 BufferedInputStream bis = new BufferedInputStream(channelSftp.get(c.getFilename()));
-                this.displayToConsole("Writing the file to current directory: " + newFile.getName());
+                this.displayToConsole("Writing the file to current directory/downloaded_logs: " + newFile.getName());
                 OutputStream os = new FileOutputStream(newFile);
                 BufferedOutputStream bos = new BufferedOutputStream(os);
                 int readCount;
@@ -284,15 +297,24 @@ public class Logalyzer {
 
     }
 
-    public Boolean unZipLogs(String pathToTar) throws LogException{
+    public Boolean unZipLogs(String pathToGZIP) throws LogException{
         try{
-            if(isFilenameValid(pathToTar) && new File(pathToTar).isDirectory()){
-                Process p = Runtime.getRuntime().exec(pathToTar + System.getProperty("file.separator")+"tar.exe ");
+            String command;
+            if(isFilenameValid(pathToGZIP) && new File(pathToGZIP).isDirectory()){
+
+                if(this.getGzipPath() != null){
+                    command = this.getGzipPath() + File.separator +"gzip.exe -drf " + "\"" + System.getProperty("user.dir") + File.separator + "downloaded_logs" + File.separator;
+                }
+                else{
+                    command = pathToGZIP + File.separator +"gzip.exe -drf " + "\"" + System.getProperty("user.dir") + File.separator + "downloaded_logs" + File.separator;
+                }
+                this.displayToConsole("About to start the GZIP process with command: " + command);
+                Process p = Runtime.getRuntime().exec(command);
+                this.displayToConsole("GZIP has been executed...");
             }
             else{
-                throw new LogException("Path error, please provide valid directory path for Tar.exe");
+                throw new LogException("Path error, please provide valid DIRECTORY path for GZIP.exe");
             }
-
             return true;
         }
         catch(IOException e){

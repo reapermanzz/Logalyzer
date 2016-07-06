@@ -24,6 +24,7 @@ public class GUI extends JFrame {
     private JTextField grep = new JTextField(50);
     private JTextField log = new JTextField(50);
     private JTextField SFTPInfo = new JTextField(50);
+    private JTextField gzipPath = new JTextField(50);
     private JButton executeButton = new JButton();
     private JButton pullLogsFromServer = new JButton();
     private JButton threadCheck = new JButton();
@@ -59,15 +60,14 @@ public class GUI extends JFrame {
 
             logalyzer.displayToConsole("Creating ThreadMonitor thread...");
             ThreadMonitor threadMon = new ThreadMonitor(runningThreads, logalyzer);
-            logalyzer.displayToConsole("Starting ThreadMonitor thread...");
+            logalyzer.displayToConsole("Starting ThreadMonitor thread with reporting turned off, click Check Thread Status button to enable...");
             threadMon.setName("Thread Monitor\"" +new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+            threadMon.report = false;
             this.threadMon = threadMon;
             createNewThread(threadMon).start();
         } catch (LogException e) {
             logalyzer.displayToConsole("Could not create a Logalyzer: " + e.getMessage());
         }
-
-
     }
 
     private void initGUI(int width, int height, String titleOfWindow) {
@@ -87,15 +87,18 @@ public class GUI extends JFrame {
         SFTPInfo.setText("reaperman:13371337@rh.rdctech.com:/home/reaperman/logs/rh.rdctech.com/http");
         consoleLog.setLineWrap(true);
         consoleLog.setWrapStyleWord(true);
-        grep.setText("C:\\cygwin64\\bin\\grep.exe");
+        grep.setText("C:\\cygwin64\\bin\\");
         displayConsole.setLineWrap(true);
         log.setText(logalyzer.getLogPath());
         threadCheck.setText("Check Thread Status");
+        gzipPath.setText("C:\\cygwin64\\bin\\");
     }
 
     private void runGUI() {
         revalidate();
         setVisible(true);
+        add(new Label("Location of GZIP"));
+        add(gzipPath);
         add(new Label("Location of GREP:"));
         add(grep);
         add(new Label("Log Searching Directory:"));
@@ -133,11 +136,14 @@ public class GUI extends JFrame {
                 grabLogs.start();
             }
         });
-        /*unZipLogs.addActionListener(new ActionListener() {
+        unZipLogs.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-
+                logalyzer.setGzipPath(gzipPath.getText());
+                Thread unZipLogs = createNewThread(guiThreadsTemplate.get("unzip"));
+                unZipLogs.setName("GZIP Thread\""+new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+                unZipLogs.start();
             }
-        });*/
+        });
         threadCheck.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if(threadMon.report){threadMon.report = false;}
@@ -177,7 +183,6 @@ public class GUI extends JFrame {
                         logalyzer.sftpFromServer("/usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/log", "root", "vxml010ykf", "ucR00t!");
                     }
                     else if(SFTPInfo.getText().equalsIgnoreCase("PRODCNC")){
-                        logalyzer.setCredentials(logalyzer.parseSSHCredentials(SFTPInfo.getText()));
                         logalyzer.displayToConsole("Beginning retrieval of Files over SFTP from PRODCNC...");
                         logalyzer.sftpFromServer("/usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/log", "root", "vxml010cnc", "ucR00t!");
                     }
@@ -209,9 +214,27 @@ public class GUI extends JFrame {
                 }
             }
         });
+        final Thread unzip = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    logalyzer.displayToConsole("Starting GZIP thread to extract logs...");
+                    if(logalyzer.unZipLogs(gzipPath.getText())){
+                        unZipLogs.setBackground(new Color(0, 255, 0));
+                    }
+                    else{
+                        unZipLogs.setBackground(new Color(255, 0, 0));
+                    }
+                } catch (LogException err) {
+                    logalyzer.displayToConsole("Error occurred: " + err.getMessage());
+                }
+            }
+        });
+
         threads.put("console", refreshConsole);
         threads.put("grabLogs", grabLogs);
         threads.put("grep", grep);
+        threads.put("unzip", unzip);
         return threads;
     }
 
