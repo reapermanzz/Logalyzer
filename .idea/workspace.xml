@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1020b5b6-1d1e-4287-879d-27c9b7f09d1e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Logalyzer/GUI.java" afterPath="$PROJECT_DIR$/src/Logalyzer/GUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Logalyzer/Logalyzer.java" afterPath="$PROJECT_DIR$/src/Logalyzer/Logalyzer.java" />
     </list>
     <ignored path="BBIVRLogalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,20 +28,20 @@
       <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Logalyzer/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+            <state relative-caret-position="680">
+              <caret line="155" column="92" selection-start-line="155" selection-start-column="92" selection-end-line="155" selection-end-column="92" />
               <folding>
                 <element signature="docComment;class#GUI#0" expanded="false" />
                 <element signature="e#4897#5345#0" expanded="true" />
                 <element signature="e#5344#5345#0" expanded="true" />
-                <element signature="e#5391#7510#0" expanded="true" />
-                <element signature="e#7509#7510#0" expanded="true" />
-                <element signature="e#7552#8278#0" expanded="true" />
-                <element signature="e#8277#8278#0" expanded="true" />
-                <element signature="e#8483#8484#0" expanded="true" />
-                <element signature="e#8513#8514#0" expanded="true" />
-                <element signature="e#8566#8567#0" expanded="true" />
-                <element signature="e#8607#8608#0" expanded="true" />
+                <element signature="e#5391#7511#0" expanded="true" />
+                <element signature="e#7510#7511#0" expanded="true" />
+                <element signature="e#7553#8279#0" expanded="true" />
+                <element signature="e#8278#8279#0" expanded="true" />
+                <element signature="e#8484#8485#0" expanded="true" />
+                <element signature="e#8514#8515#0" expanded="true" />
+                <element signature="e#8567#8568#0" expanded="true" />
+                <element signature="e#8608#8609#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -881,7 +880,7 @@
       <workItem from="1467148221711" duration="1272000" />
       <workItem from="1467308415881" duration="7051000" />
       <workItem from="1467352592820" duration="46479000" />
-      <workItem from="1467676084940" duration="32375000" />
+      <workItem from="1467676084940" duration="32866000" />
     </task>
     <servers />
   </component>
@@ -918,7 +917,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87782000" />
+    <option name="totallyTimeSpent" value="88273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -989,14 +988,14 @@
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#7510#0" expanded="true" />
-            <element signature="e#7509#7510#0" expanded="true" />
-            <element signature="e#7552#8278#0" expanded="true" />
-            <element signature="e#8277#8278#0" expanded="true" />
-            <element signature="e#8483#8484#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8566#8567#0" expanded="true" />
-            <element signature="e#8607#8608#0" expanded="true" />
+            <element signature="e#5391#7511#0" expanded="true" />
+            <element signature="e#7510#7511#0" expanded="true" />
+            <element signature="e#7553#8279#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8484#8485#0" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8567#8568#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1057,14 +1056,14 @@
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#7510#0" expanded="true" />
-            <element signature="e#7509#7510#0" expanded="true" />
-            <element signature="e#7552#8278#0" expanded="true" />
-            <element signature="e#8277#8278#0" expanded="true" />
-            <element signature="e#8483#8484#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8566#8567#0" expanded="true" />
-            <element signature="e#8607#8608#0" expanded="true" />
+            <element signature="e#5391#7511#0" expanded="true" />
+            <element signature="e#7510#7511#0" expanded="true" />
+            <element signature="e#7553#8279#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8484#8485#0" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8567#8568#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1107,14 +1106,14 @@
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#7510#0" expanded="true" />
-            <element signature="e#7509#7510#0" expanded="true" />
-            <element signature="e#7552#8278#0" expanded="true" />
-            <element signature="e#8277#8278#0" expanded="true" />
-            <element signature="e#8483#8484#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8566#8567#0" expanded="true" />
-            <element signature="e#8607#8608#0" expanded="true" />
+            <element signature="e#5391#7511#0" expanded="true" />
+            <element signature="e#7510#7511#0" expanded="true" />
+            <element signature="e#7553#8279#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8484#8485#0" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8567#8568#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1157,14 +1156,14 @@
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#7510#0" expanded="true" />
-            <element signature="e#7509#7510#0" expanded="true" />
-            <element signature="e#7552#8278#0" expanded="true" />
-            <element signature="e#8277#8278#0" expanded="true" />
-            <element signature="e#8483#8484#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8566#8567#0" expanded="true" />
-            <element signature="e#8607#8608#0" expanded="true" />
+            <element signature="e#5391#7511#0" expanded="true" />
+            <element signature="e#7510#7511#0" expanded="true" />
+            <element signature="e#7553#8279#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8484#8485#0" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8567#8568#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1254,20 +1253,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Logalyzer/GUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+        <state relative-caret-position="680">
+          <caret line="155" column="92" selection-start-line="155" selection-start-column="92" selection-end-line="155" selection-end-column="92" />
           <folding>
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#7510#0" expanded="true" />
-            <element signature="e#7509#7510#0" expanded="true" />
-            <element signature="e#7552#8278#0" expanded="true" />
-            <element signature="e#8277#8278#0" expanded="true" />
-            <element signature="e#8483#8484#0" expanded="true" />
-            <element signature="e#8513#8514#0" expanded="true" />
-            <element signature="e#8566#8567#0" expanded="true" />
-            <element signature="e#8607#8608#0" expanded="true" />
+            <element signature="e#5391#7511#0" expanded="true" />
+            <element signature="e#7510#7511#0" expanded="true" />
+            <element signature="e#7553#8279#0" expanded="true" />
+            <element signature="e#8278#8279#0" expanded="true" />
+            <element signature="e#8484#8485#0" expanded="true" />
+            <element signature="e#8514#8515#0" expanded="true" />
+            <element signature="e#8567#8568#0" expanded="true" />
+            <element signature="e#8608#8609#0" expanded="true" />
           </folding>
         </state>
       </provider>

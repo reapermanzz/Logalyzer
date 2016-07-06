@@ -153,7 +153,7 @@ public class GUI extends JFrame {
                     else{
                         logalyzer.setCredentials(logalyzer.parseSSHCredentials(SFTPInfo.getText()));
                         logalyzer.displayToConsole("Successfully parsed and set SSH Credentials: " + logalyzer.getCredentials().toString());
-                        logalyzer.displayToConsole("Beginning retrieval of Files over SFTP...");
+                        logalyzer.displayToConsole("Beginning retrieval of Files over SFTP....");
                         logalyzer.sftpFromServer(logalyzer.getCredentials().get("file"), logalyzer.getCredentials().get("username"), logalyzer.getCredentials().get("host"), logalyzer.getCredentials().get("password"));
                     }
 
