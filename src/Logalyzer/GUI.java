@@ -141,11 +141,11 @@ public class GUI extends JFrame {
                         logalyzer.displayToConsole("Beginning retrieval of Files over SFTP from QA...");
                         logalyzer.sftpFromServer("/usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/log", "root", "qvxml001ykf", "ucR00t!");
                     }
-                    if(SFTPInfo.getText().equalsIgnoreCase("PRODYKF")){
+                    else if(SFTPInfo.getText().equalsIgnoreCase("PRODYKF")){
                         logalyzer.displayToConsole("Beginning retrieval of Files over SFTP from PRODYKF...");
                         logalyzer.sftpFromServer("/usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/log", "root", "vxml010ykf", "ucR00t!");
                     }
-                    if(SFTPInfo.getText().equalsIgnoreCase("PRODCNC")){
+                    else if(SFTPInfo.getText().equalsIgnoreCase("PRODCNC")){
                         logalyzer.setCredentials(logalyzer.parseSSHCredentials(SFTPInfo.getText()));
                         logalyzer.displayToConsole("Beginning retrieval of Files over SFTP from PRODCNC...");
                         logalyzer.sftpFromServer("/usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/log", "root", "vxml010cnc", "ucR00t!");
