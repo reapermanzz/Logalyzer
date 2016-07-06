@@ -137,11 +137,26 @@ public class GUI extends JFrame {
             public void run() {
                 logalyzer.displayToConsole("Starting Thread to acquire logs via SFTP...");
                 try {
-                    logalyzer.setCredentials(logalyzer.parseSSHCredentials(SFTPInfo.getText()));
-                    logalyzer.displayToConsole("Successfully parsed and set SSH Credentials: " + logalyzer.getCredentials().toString());
+                    if(SFTPInfo.getText().equalsIgnoreCase("QA")){
+                        logalyzer.displayToConsole("Beginning retrieval of Files over SFTP from QA...");
+                        logalyzer.sftpFromServer("/usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/log", "root", "qvxml001ykf", "ucR00t!");
+                    }
+                    if(SFTPInfo.getText().equalsIgnoreCase("PRODYKF")){
+                        logalyzer.displayToConsole("Beginning retrieval of Files over SFTP from PRODYKF...");
+                        logalyzer.sftpFromServer("/usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/log", "root", "vxml010ykf", "ucR00t!");
+                    }
+                    if(SFTPInfo.getText().equalsIgnoreCase("PRODCNC")){
+                        logalyzer.setCredentials(logalyzer.parseSSHCredentials(SFTPInfo.getText()));
+                        logalyzer.displayToConsole("Beginning retrieval of Files over SFTP from PRODCNC...");
+                        logalyzer.sftpFromServer("/usr/local/apache-tomcat-7.0.61/webapps/bbIVR/data/log", "root", "vxml010cnc", "ucR00t!");
+                    }
+                    else{
+                        logalyzer.setCredentials(logalyzer.parseSSHCredentials(SFTPInfo.getText()));
+                        logalyzer.displayToConsole("Successfully parsed and set SSH Credentials: " + logalyzer.getCredentials().toString());
+                        logalyzer.displayToConsole("Beginning retrieval of Files over SFTP...");
+                        logalyzer.sftpFromServer(logalyzer.getCredentials().get("file"), logalyzer.getCredentials().get("username"), logalyzer.getCredentials().get("host"), logalyzer.getCredentials().get("password"));
+                    }
 
-                    logalyzer.displayToConsole("Beginning retrieval of Files over SFTP...");
-                    logalyzer.sftpFromServer(logalyzer.getCredentials().get("file"), logalyzer.getCredentials().get("username"), logalyzer.getCredentials().get("host"), logalyzer.getCredentials().get("password"));
                 } catch (LogException err) {
                     logalyzer.displayToConsole("Error while trying to pull logs from Server: " + err.getMessage());
                 }

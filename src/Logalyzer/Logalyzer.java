@@ -244,18 +244,17 @@ public class Logalyzer {
                 this.displayToConsole("About to download file: " + c.getFilename());
                 File newFile = null;
                 if (this.logPath == null) {
-                    this.displayToConsole("Trying to create file: " + System.getProperty("user.dir") + System.getProperty("file.separator") + c.getFilename());
-                    newFile = new File(System.getProperty("user.dir") + System.getProperty("file.separator") + c.getFilename());
+                    this.displayToConsole("Trying to create file: " + System.getProperty("user.dir") + System.getProperty("file.separator") + host + "_" + c.getFilename());
+                    newFile = new File(System.getProperty("user.dir") + System.getProperty("file.separator") + host + "_" + c.getFilename());
                 } else {
-                    newFile = new File(this.logPath + "/" + c.getFilename());
-
+                    newFile = new File(this.logPath + "/" + host + "_" + c.getFilename());
                 }
                 BufferedInputStream bis = new BufferedInputStream(channelSftp.get(c.getFilename()));
+                this.displayToConsole("Writing the file to current directory: " + newFile.getName());
                 OutputStream os = new FileOutputStream(newFile);
                 BufferedOutputStream bos = new BufferedOutputStream(os);
                 int readCount;
                 while ((readCount = bis.read(buffer)) > 0) {
-                    this.displayToConsole("Writing: ");
                     bos.write(buffer, 0, readCount);
                 }
                 bis.close();

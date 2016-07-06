@@ -26,33 +26,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Logalyzer/GUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="102" column="91" selection-start-line="102" selection-start-column="91" selection-end-line="102" selection-end-column="91" />
+            <state relative-caret-position="476">
+              <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
               <folding>
                 <element signature="docComment;class#GUI#0" expanded="false" />
                 <element signature="e#4897#5345#0" expanded="true" />
                 <element signature="e#5344#5345#0" expanded="true" />
-                <element signature="e#5391#6319#0" expanded="true" />
-                <element signature="e#6318#6319#0" expanded="true" />
-                <element signature="e#6361#7087#0" expanded="true" />
-                <element signature="e#7086#7087#0" expanded="true" />
-                <element signature="e#7292#7293#0" expanded="true" />
-                <element signature="e#7322#7323#0" expanded="true" />
-                <element signature="e#7375#7376#0" expanded="true" />
-                <element signature="e#7416#7417#0" expanded="true" />
+                <element signature="e#5391#7510#0" expanded="true" />
+                <element signature="e#7509#7510#0" expanded="true" />
+                <element signature="e#7552#8278#0" expanded="true" />
+                <element signature="e#8277#8278#0" expanded="true" />
+                <element signature="e#8483#8484#0" expanded="true" />
+                <element signature="e#8513#8514#0" expanded="true" />
+                <element signature="e#8566#8567#0" expanded="true" />
+                <element signature="e#8607#8608#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Logalyzer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Logalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Logalyzer/Logalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="94" column="52" selection-start-line="94" selection-start-column="52" selection-end-line="94" selection-end-column="52" />
+            <state relative-caret-position="999">
+              <caret line="252" column="101" selection-start-line="252" selection-start-column="101" selection-end-line="252" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Logalyzer#0" expanded="false" />
@@ -127,8 +127,8 @@
         <option value="$PROJECT_DIR$/src/Logalyzer/LogException.java" />
         <option value="$PROJECT_DIR$/src/Logalyzer/CLI.java" />
         <option value="$PROJECT_DIR$/src/Logalyzer/LogalyzerTest.java" />
-        <option value="$PROJECT_DIR$/src/Logalyzer/GUI.java" />
         <option value="$PROJECT_DIR$/src/Logalyzer/Logalyzer.java" />
+        <option value="$PROJECT_DIR$/src/Logalyzer/GUI.java" />
       </list>
     </option>
   </component>
@@ -881,7 +881,7 @@
       <workItem from="1467148221711" duration="1272000" />
       <workItem from="1467308415881" duration="7051000" />
       <workItem from="1467352592820" duration="46479000" />
-      <workItem from="1467676084940" duration="30062000" />
+      <workItem from="1467676084940" duration="32375000" />
     </task>
     <servers />
   </component>
@@ -918,7 +918,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85469000" />
+    <option name="totallyTimeSpent" value="87782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -967,7 +967,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Logalyzer/GUI.java</url>
-          <line>169</line>
+          <line>184</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -989,14 +989,14 @@
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#6319#0" expanded="true" />
-            <element signature="e#6318#6319#0" expanded="true" />
-            <element signature="e#6361#7087#0" expanded="true" />
-            <element signature="e#7086#7087#0" expanded="true" />
-            <element signature="e#7292#7293#0" expanded="true" />
-            <element signature="e#7322#7323#0" expanded="true" />
-            <element signature="e#7375#7376#0" expanded="true" />
-            <element signature="e#7416#7417#0" expanded="true" />
+            <element signature="e#5391#7510#0" expanded="true" />
+            <element signature="e#7509#7510#0" expanded="true" />
+            <element signature="e#7552#8278#0" expanded="true" />
+            <element signature="e#8277#8278#0" expanded="true" />
+            <element signature="e#8483#8484#0" expanded="true" />
+            <element signature="e#8513#8514#0" expanded="true" />
+            <element signature="e#8566#8567#0" expanded="true" />
+            <element signature="e#8607#8608#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1057,14 +1057,14 @@
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#6319#0" expanded="true" />
-            <element signature="e#6318#6319#0" expanded="true" />
-            <element signature="e#6361#7087#0" expanded="true" />
-            <element signature="e#7086#7087#0" expanded="true" />
-            <element signature="e#7292#7293#0" expanded="true" />
-            <element signature="e#7322#7323#0" expanded="true" />
-            <element signature="e#7375#7376#0" expanded="true" />
-            <element signature="e#7416#7417#0" expanded="true" />
+            <element signature="e#5391#7510#0" expanded="true" />
+            <element signature="e#7509#7510#0" expanded="true" />
+            <element signature="e#7552#8278#0" expanded="true" />
+            <element signature="e#8277#8278#0" expanded="true" />
+            <element signature="e#8483#8484#0" expanded="true" />
+            <element signature="e#8513#8514#0" expanded="true" />
+            <element signature="e#8566#8567#0" expanded="true" />
+            <element signature="e#8607#8608#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1107,14 +1107,14 @@
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#6319#0" expanded="true" />
-            <element signature="e#6318#6319#0" expanded="true" />
-            <element signature="e#6361#7087#0" expanded="true" />
-            <element signature="e#7086#7087#0" expanded="true" />
-            <element signature="e#7292#7293#0" expanded="true" />
-            <element signature="e#7322#7323#0" expanded="true" />
-            <element signature="e#7375#7376#0" expanded="true" />
-            <element signature="e#7416#7417#0" expanded="true" />
+            <element signature="e#5391#7510#0" expanded="true" />
+            <element signature="e#7509#7510#0" expanded="true" />
+            <element signature="e#7552#8278#0" expanded="true" />
+            <element signature="e#8277#8278#0" expanded="true" />
+            <element signature="e#8483#8484#0" expanded="true" />
+            <element signature="e#8513#8514#0" expanded="true" />
+            <element signature="e#8566#8567#0" expanded="true" />
+            <element signature="e#8607#8608#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1157,14 +1157,14 @@
             <element signature="docComment;class#GUI#0" expanded="false" />
             <element signature="e#4897#5345#0" expanded="true" />
             <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#6319#0" expanded="true" />
-            <element signature="e#6318#6319#0" expanded="true" />
-            <element signature="e#6361#7087#0" expanded="true" />
-            <element signature="e#7086#7087#0" expanded="true" />
-            <element signature="e#7292#7293#0" expanded="true" />
-            <element signature="e#7322#7323#0" expanded="true" />
-            <element signature="e#7375#7376#0" expanded="true" />
-            <element signature="e#7416#7417#0" expanded="true" />
+            <element signature="e#5391#7510#0" expanded="true" />
+            <element signature="e#7509#7510#0" expanded="true" />
+            <element signature="e#7552#8278#0" expanded="true" />
+            <element signature="e#8277#8278#0" expanded="true" />
+            <element signature="e#8483#8484#0" expanded="true" />
+            <element signature="e#8513#8514#0" expanded="true" />
+            <element signature="e#8566#8567#0" expanded="true" />
+            <element signature="e#8607#8608#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1230,30 +1230,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Logalyzer/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="102" column="91" selection-start-line="102" selection-start-column="91" selection-end-line="102" selection-end-column="91" />
-          <folding>
-            <element signature="docComment;class#GUI#0" expanded="false" />
-            <element signature="e#4897#5345#0" expanded="true" />
-            <element signature="e#5344#5345#0" expanded="true" />
-            <element signature="e#5391#6319#0" expanded="true" />
-            <element signature="e#6318#6319#0" expanded="true" />
-            <element signature="e#6361#7087#0" expanded="true" />
-            <element signature="e#7086#7087#0" expanded="true" />
-            <element signature="e#7292#7293#0" expanded="true" />
-            <element signature="e#7322#7323#0" expanded="true" />
-            <element signature="e#7375#7376#0" expanded="true" />
-            <element signature="e#7416#7417#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Logalyzer/Logalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="94" column="52" selection-start-line="94" selection-start-column="52" selection-end-line="94" selection-end-column="52" />
+        <state relative-caret-position="999">
+          <caret line="252" column="101" selection-start-line="252" selection-start-column="101" selection-end-line="252" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Logalyzer#0" expanded="false" />
@@ -1268,6 +1248,26 @@
             <element signature="method#writeToFile#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#getSessionIdsFromLog#0;class#Logalyzer#0" expanded="false" />
             <element signature="method#extractSessionId#0;class#Logalyzer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logalyzer/GUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="143" column="47" selection-start-line="143" selection-start-column="47" selection-end-line="143" selection-end-column="47" />
+          <folding>
+            <element signature="docComment;class#GUI#0" expanded="false" />
+            <element signature="e#4897#5345#0" expanded="true" />
+            <element signature="e#5344#5345#0" expanded="true" />
+            <element signature="e#5391#7510#0" expanded="true" />
+            <element signature="e#7509#7510#0" expanded="true" />
+            <element signature="e#7552#8278#0" expanded="true" />
+            <element signature="e#8277#8278#0" expanded="true" />
+            <element signature="e#8483#8484#0" expanded="true" />
+            <element signature="e#8513#8514#0" expanded="true" />
+            <element signature="e#8566#8567#0" expanded="true" />
+            <element signature="e#8607#8608#0" expanded="true" />
           </folding>
         </state>
       </provider>
