@@ -6,7 +6,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 /**
@@ -24,8 +26,11 @@ public class GUI extends JFrame {
     private JTextField SFTPInfo = new JTextField(50);
     private JButton executeButton = new JButton();
     private JButton pullLogsFromServer = new JButton();
+    private JButton threadCheck = new JButton();
     private JButton unZipLogs = new JButton();
-    private HashMap<String, Thread> guiThreads = new HashMap<>();
+    private HashMap<String, Thread> guiThreadsTemplate = new HashMap<>();
+    private ArrayList<Thread> runningThreads = new ArrayList<>();
+    private ThreadMonitor threadMon;
 
     Logalyzer logalyzer = null;
     private StringBuilder runLog = new StringBuilder();
@@ -33,19 +38,31 @@ public class GUI extends JFrame {
 
     public GUI(String titleOfWindow, int width, int height) {
         try {
-            logalyzer = new Logalyzer(grep.getText());
+            this.logalyzer = new Logalyzer(grep.getText());
             initGUI(width, height, titleOfWindow);
             logalyzer.displayToConsole("New Logalyzer Initialized with: " + grep.getText());
             logalyzer.setCredentials(logalyzer.parseSSHCredentials(SFTPInfo.getText()));
             logalyzer.displayToConsole("Logalyzer set credentials: " + logalyzer.getCredentials().toString());
+
             logalyzer.displayToConsole("Initializing GUI..");
             runGUI();
+
             logalyzer.displayToConsole("Initalizing Threads...");
-            this.guiThreads = initThreads();
+            this.guiThreadsTemplate = initThreads();
+
             logalyzer.displayToConsole("Starting Console Refresh thread");
-            startThreads(this.guiThreads.get("console"));
+            Thread consoleThread = new Thread(guiThreadsTemplate.get("console"));
+            consoleThread.setName("Console Thread\"" +new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+            createNewThread(consoleThread).start();
             logalyzer.displayToConsole("Initializing Event Action Listeners...");
             addActionListeners();
+
+            logalyzer.displayToConsole("Creating ThreadMonitor thread...");
+            ThreadMonitor threadMon = new ThreadMonitor(runningThreads, logalyzer);
+            logalyzer.displayToConsole("Starting ThreadMonitor thread...");
+            threadMon.setName("Thread Monitor\"" +new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+            this.threadMon = threadMon;
+            createNewThread(threadMon).start();
         } catch (LogException e) {
             logalyzer.displayToConsole("Could not create a Logalyzer: " + e.getMessage());
         }
@@ -73,6 +90,7 @@ public class GUI extends JFrame {
         grep.setText("C:\\cygwin64\\bin\\grep.exe");
         displayConsole.setLineWrap(true);
         log.setText(logalyzer.getLogPath());
+        threadCheck.setText("Check Thread Status");
     }
 
     private void runGUI() {
@@ -93,6 +111,7 @@ public class GUI extends JFrame {
         add(executeButton);
         add(pullLogsFromServer);
         add(unZipLogs);
+        add(threadCheck);
     }
 
     private void addActionListeners() {
@@ -101,13 +120,17 @@ public class GUI extends JFrame {
                 logalyzer.setGrepPath(grep.getText());
                 logalyzer.setLogPath(log.getText());
                 logalyzer.displayToConsole(System.getProperty("line.separator") + "Searching for Java Session ID: " + pattern.getText());
-                createNewThread(guiThreads.get("grep")).start();
+                Thread grep = createNewThread(guiThreadsTemplate.get("grep"));
+                grep.setName("Grep Thread\"" +new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+                grep.start();
 
             }
         });
         pullLogsFromServer.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                createNewThread(guiThreads.get("grabLogs")).start();
+                Thread grabLogs = createNewThread(guiThreadsTemplate.get("grabLogs"));
+                grabLogs.setName("Grablogs Thread\"" +new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+                grabLogs.start();
             }
         });
         /*unZipLogs.addActionListener(new ActionListener() {
@@ -115,6 +138,14 @@ public class GUI extends JFrame {
 
             }
         });*/
+        threadCheck.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                if(threadMon.report){threadMon.report = false;}
+                else{
+                    threadMon.report = true;
+                }
+            }
+        });
     }
 
     private HashMap<String, Thread> initThreads() {
@@ -189,6 +220,8 @@ public class GUI extends JFrame {
     }
 
     private Thread createNewThread(Thread thread) {
-        return new Thread(thread);
+        Thread newThread = new Thread(thread, thread.getName());
+        runningThreads.add(newThread);
+        return newThread;
     }
 }
