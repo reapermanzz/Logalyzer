@@ -65,6 +65,10 @@ public class GUI extends JFrame {
             threadMon.report = false;
             this.threadMon = threadMon;
             createNewThread(threadMon).start();
+
+            Thread finder = new Thread(guiThreadsTemplate.get("finder"));
+            finder.setName("Finder GUI thread\""+new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+            createNewThread(finder).start();
         } catch (LogException e) {
             logalyzer.displayToConsole("Could not create a Logalyzer: " + e.getMessage());
         }
@@ -230,11 +234,19 @@ public class GUI extends JFrame {
                 }
             }
         });
+        final Thread finder = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                logalyzer.displayToConsole("Starting Finder GUI thread...");
+                runNewGUI();
+            }
+        });
 
         threads.put("console", refreshConsole);
         threads.put("grabLogs", grabLogs);
         threads.put("grep", grep);
         threads.put("unzip", unzip);
+        threads.put("finder", finder);
         return threads;
     }
 
@@ -246,5 +258,37 @@ public class GUI extends JFrame {
         Thread newThread = new Thread(thread, thread.getName());
         runningThreads.add(newThread);
         return newThread;
+    }
+
+    private void runNewGUI(){
+        JFrame ng = new JFrame();
+        ng.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        JPanel selections = new JPanel();
+        selections.setLayout(new GridLayout(0, 2));
+        JPanel controls = new JPanel();
+        JButton pullLog = new JButton("Pull Logs");
+        JTextArea sessions = new JTextArea(50, 100);
+        JTextArea ani = new JTextArea(50, 100);
+        selections.add(sessions);
+        selections.add(ani);
+        controls.add(pullLog);
+        final Container pane = ng.getContentPane();
+        pane.add(selections);
+        pane.add(controls);
+        ng.pack();
+        ng.setVisible(true);
+        ArrayList<Component> jframeComponents = getAllComponents(pane);
+        logalyzer.displayToConsole(jframeComponents.toString());
+
+    }
+    private static ArrayList<Component> getAllComponents(final Container c) {
+        Component[] comps = c.getComponents();
+        ArrayList<Component> compList = new ArrayList<Component>();
+        for (Component comp : comps) {
+            compList.add(comp);
+            if (comp instanceof Container)
+                compList.addAll(getAllComponents((Container) comp));
+        }
+        return compList;
     }
 }
