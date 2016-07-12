@@ -8,10 +8,13 @@ public class CLI extends Logalyzer {
         if(args.length != 0)
         {
             if (args[0].toString().equalsIgnoreCase("gui")) {
-                GUI graphicalInterface = new GUI("BlackBerry IVR Log Analyzer", 1280, 1024);
+
             } else {
                 return;
             }
+        }
+        else{
+            GUI graphicalInterface = new GUI("BlackBerry IVR Log Analyzer", 1280, 1024);
         }
     }
 }

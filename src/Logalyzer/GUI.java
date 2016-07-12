@@ -3,9 +3,12 @@ package Logalyzer;
 import org.apache.http.NameValuePair;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -65,10 +68,6 @@ public class GUI extends JFrame {
             threadMon.report = false;
             this.threadMon = threadMon;
             createNewThread(threadMon).start();
-
-            Thread finder = new Thread(guiThreadsTemplate.get("finder"));
-            finder.setName("Finder GUI thread\""+new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
-            createNewThread(finder).start();
         } catch (LogException e) {
             logalyzer.displayToConsole("Could not create a Logalyzer: " + e.getMessage());
         }
@@ -85,10 +84,10 @@ public class GUI extends JFrame {
         //pattern.setText("59BF2C55C1440A8FEEEBB1538D9D6064:/bbIVR");
         pattern.setText("59BF2C55C1440A8FEEE881338D9D6064:/bbIVR");
         //pattern.setText("Test123");
-        executeButton.setText("Pull logs for JAVASESSIONID");
+        executeButton.setText("Find Calls");
         pullLogsFromServer.setText("Download logs from Server");
         unZipLogs.setText("Unzip Logs");
-        SFTPInfo.setText("reaperman:13371337@rh.rdctech.com:/home/reaperman/logs/rh.rdctech.com/http");
+        SFTPInfo.setText("username:password@host.com:/path/to/logs");
         consoleLog.setLineWrap(true);
         consoleLog.setWrapStyleWord(true);
         grep.setText("C:\\cygwin64\\bin\\");
@@ -206,13 +205,28 @@ public class GUI extends JFrame {
             @Override
             public void run() {
                 try {
-                    logalyzer.displayToConsole("Starting GREP search thread...");
-                    StringBuilder searchReturn = logalyzer.searchJavaSession(pattern.getText());
-                    if (searchReturn.toString().equalsIgnoreCase("")) {
-                        displayConsole.setText("No pattern found inside that path");
-                    } else {
-                        displayConsole.setText(searchReturn.toString());
+                    if(!pattern.getText().contains(":/bbIVR")){
+                        logalyzer.displayToConsole("Compiling available sessionIDs based on ANI search...");
+                        StringBuilder searchReturn = logalyzer.searchJavaSession(pattern.getText());
+                        Thread finder = new Thread(guiThreadsTemplate.get("finder"));
+                        finder.setName("Finder GUI thread\""+new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+                        createNewThread(finder).start();
+                        if (searchReturn.toString().equalsIgnoreCase("")) {
+                            displayConsole.setText("No pattern found inside that path");
+                        } else {
+                            displayConsole.setText(searchReturn.toString());
+                        }
                     }
+                    else{
+                        logalyzer.displayToConsole("Starting GREP search thread...");
+                        StringBuilder searchReturn = logalyzer.searchJavaSession(pattern.getText());
+                        if (searchReturn.toString().equalsIgnoreCase("")) {
+                            displayConsole.setText("No pattern found inside that path");
+                        } else {
+                            displayConsole.setText(searchReturn.toString());
+                        }
+                    }
+
                 } catch (LogException err) {
                     logalyzer.displayToConsole("Error occurred: " + err.getMessage());
                 }
@@ -238,7 +252,12 @@ public class GUI extends JFrame {
             @Override
             public void run() {
                 logalyzer.displayToConsole("Starting Finder GUI thread...");
-                runNewGUI();
+                try{
+                    startFinderGUI(logalyzer.getSessionIdsFromSearch(logalyzer.searchJavaSession(pattern.getText())));
+                }
+                catch(LogException e){
+                    logalyzer.displayToConsole("Error occurred: " + e.getMessage());
+                }
             }
         });
 
@@ -250,37 +269,43 @@ public class GUI extends JFrame {
         return threads;
     }
 
-    private void startThreads(Thread thread) {
-        thread.start();
-    }
-
     private Thread createNewThread(Thread thread) {
         Thread newThread = new Thread(thread, thread.getName());
         runningThreads.add(newThread);
         return newThread;
     }
 
-    private void runNewGUI(){
-        JFrame ng = new JFrame();
-        ng.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        JPanel selections = new JPanel();
-        selections.setLayout(new GridLayout(0, 2));
-        JPanel controls = new JPanel();
-        JButton pullLog = new JButton("Pull Logs");
-        JTextArea sessions = new JTextArea(50, 100);
-        JTextArea ani = new JTextArea(50, 100);
-        selections.add(sessions);
-        selections.add(ani);
-        controls.add(pullLog);
+    private void startFinderGUI(final ArrayList<String>selections){
+        JFrame ng = new JFrame("Call Finder GUI");
+        ng.setDefaultCloseOperation(ng.DISPOSE_ON_CLOSE);
+        JPanel jSessionsSelectionPanel = new JPanel();
+        jSessionsSelectionPanel.setLayout(new GridLayout(2, 0));
+        JList sessionsListSelector = new JList(selections.toArray());
+        jSessionsSelectionPanel.add(new JScrollPane(sessionsListSelector));
+        Label info = new Label("Above is a selection of unique calls I found for \"" + pattern.getText() + "\", double-click one to pull the whole call...");
+        info.setSize(3, 2);
+        jSessionsSelectionPanel.add(info);
         final Container pane = ng.getContentPane();
-        pane.add(selections);
-        pane.add(controls);
+        pane.add(jSessionsSelectionPanel, BorderLayout.NORTH);
         ng.pack();
         ng.setVisible(true);
-        ArrayList<Component> jframeComponents = getAllComponents(pane);
-        logalyzer.displayToConsole(jframeComponents.toString());
+        sessionsListSelector.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+                    logalyzer.displayToConsole("Selection detected via Finder GUI: " + selections.get(list.getSelectedIndex()));
+                    pattern.setText(selections.get(list.getSelectedIndex()));
+                    Thread grep = createNewThread(guiThreadsTemplate.get("grep"));
+                    grep.setName("Grep Thread\"" +new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
+                    grep.start();
+                }
+            }
+        });
 
+
+        ArrayList<Component> jframeComponents = getAllComponents(pane);
     }
+
     private static ArrayList<Component> getAllComponents(final Container c) {
         Component[] comps = c.getComponents();
         ArrayList<Component> compList = new ArrayList<Component>();

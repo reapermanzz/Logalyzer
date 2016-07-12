@@ -219,9 +219,32 @@ public class Logalyzer {
         }
     }
 
+    public ArrayList<String> getSessionIdsFromSearch(StringBuilder searchOutput) throws LogException{
+        String[] outputLines = searchOutput.toString().split("\\n");
+        ArrayList<String> sessionIds = new ArrayList<String>();
+        for(String s : outputLines){
+            String sessionId = extractSessionId(s);
+            //check if the session ID exists in the set already, if it doesn't, add it.
+            if(!sessionIds.contains(sessionId) && !extractSessionId(s).equalsIgnoreCase("")){
+                sessionIds.add(extractSessionId(s));
+            }
+        }
+        if(!sessionIds.isEmpty()){
+            return sessionIds;
+        }
+        else{
+            throw new LogException("no session IDs were found in your search...");
+        }
+    }
+
     public String extractSessionId(String line) throws LogException {
         int sessionSuffixLoc = line.indexOf(":/bbIVR");
-        return line.substring(sessionSuffixLoc - 32, sessionSuffixLoc + 7);
+        try{
+            return line.substring(sessionSuffixLoc - 32, sessionSuffixLoc + 7);
+        }
+        catch(StringIndexOutOfBoundsException e){
+            return "";
+        }
     }
 
     public Boolean sftpFromServer(String pathToGet, String usr, String host, String pwd) throws LogException {
