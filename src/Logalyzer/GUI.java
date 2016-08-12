@@ -294,7 +294,7 @@ public class GUI extends JFrame {
                 JList list = (JList)evt.getSource();
                 if (evt.getClickCount() == 2) {
                     logalyzer.displayToConsole("Selection detected via Finder GUI: " + selections.get(list.getSelectedIndex()));
-                    pattern.setText(selections.get(list.getSelectedIndex()));
+                    pattern.setText(selections.get(list.getSelectedIndex()).substring(0,39));
                     Thread grep = createNewThread(guiThreadsTemplate.get("grep"));
                     grep.setName("Grep Thread\"" +new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date())+"\"");
                     grep.start();

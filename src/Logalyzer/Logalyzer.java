@@ -52,54 +52,6 @@ public class Logalyzer {
         }
     }
 
-    public String getLogPath() {
-        return logPath;
-    }
-
-    public void setLogPath(String logPath) {
-        this.logPath = logPath;
-    }
-
-    public String getGrepPath() {
-        return grepPath;
-    }
-
-    public void setGrepPath(String grepPath) {
-        this.grepPath = grepPath;
-    }
-
-    public String getLogLevel() {
-        return logLevel;
-    }
-
-    public void setLogLevel(String logLevel) {
-        this.logLevel = logLevel;
-    }
-
-    public StringBuilder getConsoleLog() {
-        return consoleLog;
-    }
-
-    public void setConsoleLog(StringBuilder consoleLog) {
-        this.consoleLog = consoleLog;
-    }
-
-    public String getGzipPath() {
-        return gzipPath;
-    }
-
-    public void setGzipPath(String gzipPath) {
-        this.gzipPath = gzipPath;
-    }
-
-    public Map<String, String> getCredentials() {
-        return credentials;
-    }
-
-    public void setCredentials(Map<String, String> credentials) {
-        this.credentials = credentials;
-    }
-
     public void displayToConsole(String message) {
         message = dateFormat.format(new Date())+":"+this.getLogLevel() + ":" + message;
         this.getConsoleLog().append(System.getProperty("line.separator")+message);
@@ -221,16 +173,18 @@ public class Logalyzer {
 
     public ArrayList<String> getSessionIdsFromSearch(StringBuilder searchOutput) throws LogException{
         String[] outputLines = searchOutput.toString().split("\\n");
-        ArrayList<String> sessionIds = new ArrayList<String>();
+        ArrayList<String> sessionIds = new ArrayList<>();
+        ArrayList<String> sesDates = new ArrayList<>();
         for(String s : outputLines){
             String sessionId = extractSessionId(s);
             //check if the session ID exists in the set already, if it doesn't, add it.
             if(!sessionIds.contains(sessionId) && !extractSessionId(s).equalsIgnoreCase("")){
                 sessionIds.add(extractSessionId(s));
+                sesDates.add(extractSessionId(s) + " DT: " + s.substring(0, 24));
             }
         }
-        if(!sessionIds.isEmpty()){
-            return sessionIds;
+        if(!sesDates.isEmpty()){
+            return sesDates;
         }
         else{
             throw new LogException("no session IDs were found in your search...");
@@ -344,5 +298,54 @@ public class Logalyzer {
             throw new LogException("Error occurred: " + e.getMessage());
         }
 
+    }
+
+    //GETTERS AND SETTERS
+    public String getLogPath() {
+        return logPath;
+    }
+
+    public void setLogPath(String logPath) {
+        this.logPath = logPath;
+    }
+
+    public String getGrepPath() {
+        return grepPath;
+    }
+
+    public void setGrepPath(String grepPath) {
+        this.grepPath = grepPath;
+    }
+
+    public String getLogLevel() {
+        return logLevel;
+    }
+
+    public void setLogLevel(String logLevel) {
+        this.logLevel = logLevel;
+    }
+
+    public StringBuilder getConsoleLog() {
+        return consoleLog;
+    }
+
+    public void setConsoleLog(StringBuilder consoleLog) {
+        this.consoleLog = consoleLog;
+    }
+
+    public String getGzipPath() {
+        return gzipPath;
+    }
+
+    public void setGzipPath(String gzipPath) {
+        this.gzipPath = gzipPath;
+    }
+
+    public Map<String, String> getCredentials() {
+        return credentials;
+    }
+
+    public void setCredentials(Map<String, String> credentials) {
+        this.credentials = credentials;
     }
 }
